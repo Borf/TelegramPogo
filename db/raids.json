@@ -1,0 +1,155 @@
+[
+	{
+		"difficulty" : 1,
+		"cp" : 1165,
+		"pokemon_id" : 129,
+		"100iv" : 125
+	},
+	{
+		"difficulty" : 1,
+		"cp" : 4375,
+		"pokemon_id" : 153,
+		"100iv" : 740
+	},
+	{
+		"difficulty" : 1,
+		"cp" : 5085,
+		"pokemon_id" : 156,
+		"100iv" : 847
+	},
+	{
+		"difficulty" : 1,
+		"cp" : 5207,
+		"pokemon_id" : 159,
+		"100iv" : 913
+	},
+	
+	{
+		"difficulty" : 2,
+		"cp" : 11200,
+		"pokemon_id" : 89,
+		"100iv" : 1548
+	},
+	{
+		"difficulty" : 2,
+		"cp" : 11245,
+		"pokemon_id" : 110,
+		"100iv" : 1247
+	},
+	{
+		"difficulty" : 2,
+		"cp" : 11311,
+		"pokemon_id" : 125,
+		"100iv" : 1255
+	},
+	{
+		"difficulty" : 2,
+		"cp" : 11610,
+		"pokemon_id" : 126,
+		"100iv" : 1288
+	},
+	{
+		"difficulty" : 2,
+		"cp" : 12633,
+		"pokemon_id" : 103,
+		"100iv" : 1666
+	},
+
+
+	{
+		"difficulty" : 3,
+		"cp" : 16696,
+		"pokemon_id" : 134,
+		"100iv" : 1804
+	},
+	{
+		"difficulty" : 3,
+		"cp" : 17832,
+		"pokemon_id" : 59,
+		"100iv" : 1622
+	},
+	{
+		"difficulty" : 3,
+		"cp" : 18144,
+		"pokemon_id" : 68,
+		"100iv" : 1650
+	},
+	{
+		"difficulty" : 3,
+		"cp" : 19768,
+		"pokemon_id" : 94,
+		"100iv" : 1496
+	},
+	{
+		"difficulty" : 3,
+		"cp" : 19833,
+		"pokemon_id" : 135,
+		"100iv" : 1560
+	},
+	{
+		"difficulty" : 3,
+		"cp" : 21155,
+		"pokemon_id" : 136,
+		"100iv" : 1659
+	},
+	{
+		"difficulty" : 3,
+		"cp" : 22646,
+		"pokemon_id" : 65,
+		"100iv" : 1649
+	},
+
+
+
+
+
+	{
+		"name" : "lapras",
+		"difficulty" : 4,
+		"cp" : 21768,
+		"pokemon_id" : 131,
+		"100iv" : 1487
+	},
+	{
+		"name" : "blastoise",
+		"difficulty" : 4,
+		"cp" : 24162,
+		"pokemon_id" : 9,
+		"100iv" : 1309
+	},
+	{
+		"name" : "snorlax",
+		"difficulty" : 4,
+		"cp" : 25419,
+		"pokemon_id" : 143,
+		"100iv" : 1917
+	},
+	{
+		"name" : "venusaur",
+		"difficulty" : 4,
+		"cp" : 26921,
+		"pokemon_id" : 3,
+		"100iv" : 1467
+	},
+	{
+		"name" : "charizard",
+		"difficulty" : 4,
+		"cp" : 28485,
+		"pokemon_id" : 6,
+		"100iv" : 1535
+	},
+	{
+		"name" : "rhydon",
+		"difficulty" : 4,
+		"cp" : 30512,
+		"pokemon_id" : 112,
+		"100iv" : 1886
+	},
+	{
+		"name" : "tyranitar",
+		"difficulty" : 4,
+		"cp" : 34707,
+		"pokemon_id" : 248,
+		"100iv" : 2096
+	}
+]

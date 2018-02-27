@@ -1,0 +1,23 @@
+{
+  "name": "telegram-pokemongo",
+  "version": "1.0.0",
+  "description": "Telegram bot for Pokemon Go notifications",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Borf/TelegramPogo.git"
+  },
+  "keywords": [
+    "telegram",
+    "pokemon"
+  ],
+  "author": "Borf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Borf/TelegramPogo/issues"
+  },
+  "homepage": "https://github.com/Borf/TelegramPogo#readme"
+}

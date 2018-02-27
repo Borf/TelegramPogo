@@ -1,0 +1,5777 @@
+{ 
+  "1" : { 
+      "name" : "Bulbasaur",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "61",
+      "types" : [ 
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "2" : { 
+      "name" : "Ivysaur",
+      "rarity" : "Rare",
+      "spawn_rate" : "421",
+      "types" : [ 
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "3" : { 
+      "name" : "Venusaur",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "641",
+      "types" : [ 
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "4" : { 
+      "name" : "Charmander",
+      "rarity" : "Rare",
+      "spawn_rate" : "119",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "5" : { 
+      "name" : "Charmeleon",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1025",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "6" : { 
+      "name" : "Charizard",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "879",
+      "types" : [ 
+          { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "7" : { 
+      "name" : "Squirtle",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "65",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "8" : { 
+      "name" : "Wartortle",
+      "rarity" : "Rare",
+      "spawn_rate" : "484",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "9" : { 
+      "name" : "Blastoise",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "843",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "10" : { 
+      "name" : "Caterpie",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "51",
+      "types" : [ { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          } ]
+    },
+  "11" : { 
+      "name" : "Metapod",
+      "rarity" : "Rare",
+      "spawn_rate" : "433",
+      "types" : [ { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          } ]
+    },
+  "12" : { 
+      "name" : "Butterfree",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "843",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "13" : { 
+      "name" : "Weedle",
+      "rarity" : "Common",
+      "spawn_rate" : "21",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "14" : { 
+      "name" : "Kakuna",
+      "rarity" : "Rare",
+      "spawn_rate" : "204",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "15" : { 
+      "name" : "Beedrill",
+      "rarity" : "Rare",
+      "spawn_rate" : "377",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "16" : { 
+      "name" : "Pidgey",
+      "rarity" : "Common",
+      "spawn_rate" : "10",
+      "types" : [ 
+          { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "17" : { 
+      "name" : "Pidgeotto",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "75",
+      "types" : [ 
+          { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "18" : { 
+      "name" : "Pidgeot",
+      "rarity" : "Rare",
+      "spawn_rate" : "203",
+      "types" : [ 
+          { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "19" : { 
+      "name" : "Rattata",
+      "rarity" : "Common",
+      "spawn_rate" : "13",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "20" : { 
+      "name" : "Raticate",
+      "rarity" : "Rare",
+      "spawn_rate" : "159",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "21" : { 
+      "name" : "Spearow",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "31",
+      "types" : [ 
+          { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "22" : { 
+      "name" : "Fearow",
+      "rarity" : "Rare",
+      "spawn_rate" : "221",
+      "types" : [ 
+          { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "23" : { 
+      "name" : "Ekans",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "75",
+      "types" : [ { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          } ]
+    },
+  "24" : { 
+      "name" : "Arbok",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "544",
+      "types" : [ { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          } ]
+    },
+  "25" : { 
+      "name" : "Pikachu",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "92",
+      "types" : [ { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          } ]
+    },
+  "26" : { 
+      "name" : "Raichu",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "2051",
+      "types" : [ { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          } ]
+    },
+  "27" : { 
+      "name" : "Sandshrew",
+      "rarity" : "Rare",
+      "spawn_rate" : "163",
+      "types" : [ { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          } ]
+    },
+  "28" : { 
+      "name" : "Sandslash",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "1619",
+      "types" : [ { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          } ]
+    },
+  "29" : { 
+      "name" : "Nidoran♀",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "77",
+      "types" : [ { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          } ]
+    },
+  "30" : { 
+      "name" : "Nidorina",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "504",
+      "types" : [ { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          } ]
+    },
+  "31" : { 
+      "name" : "Nidoqueen",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1398",
+      "types" : [ 
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          },
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          }
+        ]
+    },
+  "32" : { 
+      "name" : "Nidoran♂",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "77",
+      "types" : [ { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          } ]
+    },
+  "33" : { 
+      "name" : "Nidorino",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "586",
+      "types" : [ { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          } ]
+    },
+  "34" : { 
+      "name" : "Nidoking",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1025",
+      "types" : [ 
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          },
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          }
+        ]
+    },
+  "35" : { 
+      "name" : "Clefairy",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "85",
+      "types" : [ { 
+            "color" : "#e898e8",
+            "type" : "Fairy"
+          } ]
+    },
+  "36" : { 
+      "name" : "Clefable",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1309",
+      "types" : [ { 
+            "color" : "#e898e8",
+            "type" : "Fairy"
+          } ]
+    },
+  "37" : { 
+      "name" : "Vulpix",
+      "rarity" : "Rare",
+      "spawn_rate" : "188",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "38" : { 
+      "name" : "Ninetales",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "1538",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "39" : { 
+      "name" : "Jigglypuff",
+      "rarity" : "Rare",
+      "spawn_rate" : "101",
+      "types" : [ 
+          { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          },
+          { 
+            "color" : "#e898e8",
+            "type" : "Fairy"
+          }
+        ]
+    },
+  "40" : { 
+      "name" : "Wigglytuff",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "2051",
+      "types" : [ 
+          { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          },
+          { 
+            "color" : "#e898e8",
+            "type" : "Fairy"
+          }
+        ]
+    },
+  "41" : { 
+      "name" : "Zubat",
+      "rarity" : "Common",
+      "spawn_rate" : "24",
+      "types" : [ 
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "42" : { 
+      "name" : "Golbat",
+      "rarity" : "Rare",
+      "spawn_rate" : "209",
+      "types" : [ 
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "43" : { 
+      "name" : "Oddish",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "91",
+      "types" : [ 
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "44" : { 
+      "name" : "Gloom",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "592",
+      "types" : [ 
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "45" : { 
+      "name" : "Vileplume",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "1864",
+      "types" : [ 
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "46" : { 
+      "name" : "Paras",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "44",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          }
+        ]
+    },
+  "47" : { 
+      "name" : "Parasect",
+      "rarity" : "Rare",
+      "spawn_rate" : "397",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          }
+        ]
+    },
+  "48" : { 
+      "name" : "Venonat",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "38",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "49" : { 
+      "name" : "Venomoth",
+      "rarity" : "Rare",
+      "spawn_rate" : "300",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "50" : { 
+      "name" : "Diglett",
+      "rarity" : "Rare",
+      "spawn_rate" : "211",
+      "types" : [ { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          } ]
+    },
+  "51" : { 
+      "name" : "Dugtrio",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "1663",
+      "types" : [ { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          } ]
+    },
+  "52" : { 
+      "name" : "Meowth",
+      "rarity" : "Rare",
+      "spawn_rate" : "106",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "53" : { 
+      "name" : "Persian",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1282",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "54" : { 
+      "name" : "Psyduck",
+      "rarity" : "Rare",
+      "spawn_rate" : "108",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "55" : { 
+      "name" : "Golduck",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "707",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "56" : { 
+      "name" : "Mankey",
+      "rarity" : "Rare",
+      "spawn_rate" : "114",
+      "types" : [ { 
+            "color" : "#c03028",
+            "type" : "Fighting"
+          } ]
+    },
+  "57" : { 
+      "name" : "Primeape",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1061",
+      "types" : [ { 
+            "color" : "#c03028",
+            "type" : "Fighting"
+          } ]
+    },
+  "58" : { 
+      "name" : "Growlithe",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "77",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "59" : { 
+      "name" : "Arcanine",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "932",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "60" : { 
+      "name" : "Poliwag",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "95",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "61" : { 
+      "name" : "Poliwhirl",
+      "rarity" : "Rare",
+      "spawn_rate" : "481",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "62" : { 
+      "name" : "Poliwrath",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "1709",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#c03028",
+            "type" : "Fighting"
+          }
+        ]
+    },
+  "63" : { 
+      "name" : "Abra",
+      "rarity" : "Rare",
+      "spawn_rate" : "104",
+      "types" : [ { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          } ]
+    },
+  "64" : { 
+      "name" : "Kadabra",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "779",
+      "types" : [ { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          } ]
+    },
+  "65" : { 
+      "name" : "Alakazam",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "2461",
+      "types" : [ { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          } ]
+    },
+  "66" : { 
+      "name" : "Machop",
+      "rarity" : "Rare",
+      "spawn_rate" : "217",
+      "types" : [ { 
+            "color" : "#c03028",
+            "type" : "Fighting"
+          } ]
+    },
+  "67" : { 
+      "name" : "Machoke",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1465",
+      "types" : [ { 
+            "color" : "#c03028",
+            "type" : "Fighting"
+          } ]
+    },
+  "68" : { 
+      "name" : "Machamp",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "3418",
+      "types" : [ { 
+            "color" : "#c03028",
+            "type" : "Fighting"
+          } ]
+    },
+  "69" : { 
+      "name" : "Bellsprout",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "86",
+      "types" : [ 
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "70" : { 
+      "name" : "Weepinbell",
+      "rarity" : "Rare",
+      "spawn_rate" : "496",
+      "types" : [ 
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "71" : { 
+      "name" : "Victreebel",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "2051",
+      "types" : [ 
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "72" : { 
+      "name" : "Tentacool",
+      "rarity" : "Rare",
+      "spawn_rate" : "275",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "73" : { 
+      "name" : "Tentacruel",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "615",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "74" : { 
+      "name" : "Geodude",
+      "rarity" : "Rare",
+      "spawn_rate" : "121",
+      "types" : [ 
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          },
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          }
+        ]
+    },
+  "75" : { 
+      "name" : "Graveler",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "707",
+      "types" : [ 
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          },
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          }
+        ]
+    },
+  "76" : { 
+      "name" : "Golem",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "2797",
+      "types" : [ 
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          },
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          }
+        ]
+    },
+  "77" : { 
+      "name" : "Ponyta",
+      "rarity" : "Rare",
+      "spawn_rate" : "121",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "78" : { 
+      "name" : "Rapidash",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "992",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "79" : { 
+      "name" : "Slowpoke",
+      "rarity" : "Rare",
+      "spawn_rate" : "175",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          }
+        ]
+    },
+  "80" : { 
+      "name" : "Slowbro",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "947",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          }
+        ]
+    },
+  "81" : { 
+      "name" : "Magnemite",
+      "rarity" : "Rare",
+      "spawn_rate" : "200",
+      "types" : [ 
+          { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          },
+          { 
+            "color" : "#b8b8d0",
+            "type" : "Steel"
+          }
+        ]
+    },
+  "82" : { 
+      "name" : "Magneton",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "2051",
+      "types" : [ 
+          { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          },
+          { 
+            "color" : "#b8b8d0",
+            "type" : "Steel"
+          }
+        ]
+    },
+  "83" : { 
+      "name" : "Farfetch'd",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "61527",
+      "types" : [ 
+          { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "84" : { 
+      "name" : "Doduo",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "77",
+      "types" : [ 
+          { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "85" : { 
+      "name" : "Dodrio",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "634",
+      "types" : [ 
+          { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "86" : { 
+      "name" : "Seel",
+      "rarity" : "Rare",
+      "spawn_rate" : "196",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "87" : { 
+      "name" : "Dewgong",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "1578",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#98d8d8",
+            "type" : "Ice"
+          }
+        ]
+    },
+  "88" : { 
+      "name" : "Grimer",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "879",
+      "types" : [ { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          } ]
+    },
+  "89" : { 
+      "name" : "Muk",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "7691",
+      "types" : [ { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          } ]
+    },
+  "90" : { 
+      "name" : "Shellder",
+      "rarity" : "Rare",
+      "spawn_rate" : "177",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "91" : { 
+      "name" : "Cloyster",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "1578",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#98d8d8",
+            "type" : "Ice"
+          }
+        ]
+    },
+  "92" : { 
+      "name" : "Gastly",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "77",
+      "types" : [ 
+          { 
+            "color" : "#705898",
+            "type" : "Ghost"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "93" : { 
+      "name" : "Haunter",
+      "rarity" : "Rare",
+      "spawn_rate" : "419",
+      "types" : [ 
+          { 
+            "color" : "#705898",
+            "type" : "Ghost"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "94" : { 
+      "name" : "Gengar",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "1758",
+      "types" : [ 
+          { 
+            "color" : "#705898",
+            "type" : "Ghost"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "95" : { 
+      "name" : "Onix",
+      "rarity" : "Rare",
+      "spawn_rate" : "269",
+      "types" : [ 
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          },
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          }
+        ]
+    },
+  "96" : { 
+      "name" : "Drowzee",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "39",
+      "types" : [ { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          } ]
+    },
+  "97" : { 
+      "name" : "Hypno",
+      "rarity" : "Rare",
+      "spawn_rate" : "322",
+      "types" : [ { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          } ]
+    },
+  "98" : { 
+      "name" : "Krabby",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "73",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "99" : { 
+      "name" : "Kingler",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "530",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "100" : { 
+      "name" : "Voltorb",
+      "rarity" : "Rare",
+      "spawn_rate" : "276",
+      "types" : [ { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          } ]
+    },
+  "101" : { 
+      "name" : "Electrode",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "1985",
+      "types" : [ { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          } ]
+    },
+  "102" : { 
+      "name" : "Exeggcute",
+      "rarity" : "Rare",
+      "spawn_rate" : "123",
+      "types" : [ 
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          },
+          { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          }
+        ]
+    },
+  "103" : { 
+      "name" : "Exeggutor",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1231",
+      "types" : [ 
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          },
+          { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          }
+        ]
+    },
+  "104" : { 
+      "name" : "Cubone",
+      "rarity" : "Rare",
+      "spawn_rate" : "163",
+      "types" : [ { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          } ]
+    },
+  "105" : { 
+      "name" : "Marowak",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1431",
+      "types" : [ { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          } ]
+    },
+  "106" : { 
+      "name" : "Hitmonlee",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "504",
+      "types" : [ { 
+            "color" : "#c03028",
+            "type" : "Fighting"
+          } ]
+    },
+  "107" : { 
+      "name" : "Hitmonchan",
+      "rarity" : "Rare",
+      "spawn_rate" : "446",
+      "types" : [ { 
+            "color" : "#c03028",
+            "type" : "Fighting"
+          } ]
+    },
+  "108" : { 
+      "name" : "Lickitung",
+      "rarity" : "Rare",
+      "spawn_rate" : "443",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "109" : { 
+      "name" : "Koffing",
+      "rarity" : "Rare",
+      "spawn_rate" : "213",
+      "types" : [ { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          } ]
+    },
+  "110" : { 
+      "name" : "Weezing",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1398",
+      "types" : [ { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          } ]
+    },
+  "111" : { 
+      "name" : "Rhyhorn",
+      "rarity" : "Rare",
+      "spawn_rate" : "110",
+      "types" : [ 
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          },
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          }
+        ]
+    },
+  "112" : { 
+      "name" : "Rhydon",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "867",
+      "types" : [ 
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          },
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          }
+        ]
+    },
+  "113" : { 
+      "name" : "Chansey",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1256",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "114" : { 
+      "name" : "Tangela",
+      "rarity" : "Rare",
+      "spawn_rate" : "346",
+      "types" : [ { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          } ]
+    },
+  "115" : { 
+      "name" : "Kangaskhan",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "2461",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "116" : { 
+      "name" : "Horsea",
+      "rarity" : "Rare",
+      "spawn_rate" : "104",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "117" : { 
+      "name" : "Seadra",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "760",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "118" : { 
+      "name" : "Goldeen",
+      "rarity" : "Rare",
+      "spawn_rate" : "103",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "119" : { 
+      "name" : "Seaking",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "684",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "120" : { 
+      "name" : "Staryu",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "97",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "121" : { 
+      "name" : "Starmie",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1206",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          }
+        ]
+    },
+  "122" : { 
+      "name" : "Mr. Mime",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1431",
+      "types" : [ 
+          { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          },
+          { 
+            "color" : "#e898e8",
+            "type" : "Fairy"
+          }
+        ]
+    },
+  "123" : { 
+      "name" : "Scyther",
+      "rarity" : "Rare",
+      "spawn_rate" : "155",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "124" : { 
+      "name" : "Jynx",
+      "rarity" : "Rare",
+      "spawn_rate" : "152",
+      "types" : [ 
+          { 
+            "color" : "#98d8d8",
+            "type" : "Ice"
+          },
+          { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          }
+        ]
+    },
+  "125" : { 
+      "name" : "Electabuzz",
+      "rarity" : "Rare",
+      "spawn_rate" : "261",
+      "types" : [ { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          } ]
+    },
+  "126" : { 
+      "name" : "Magmar",
+      "rarity" : "Rare",
+      "spawn_rate" : "213",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "127" : { 
+      "name" : "Pinsir",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "99",
+      "types" : [ { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          } ]
+    },
+  "128" : { 
+      "name" : "Tauros",
+      "rarity" : "Rare",
+      "spawn_rate" : "153",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "129" : { 
+      "name" : "Magikarp",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "79",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "130" : { 
+      "name" : "Gyarados",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "2279",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "131" : { 
+      "name" : "Lapras",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1183",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#98d8d8",
+            "type" : "Ice"
+          }
+        ]
+    },
+  "132" : { 
+      "name" : "Ditto",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "30764",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "133" : { 
+      "name" : "Eevee",
+      "rarity" : "Common",
+      "spawn_rate" : "24",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "134" : { 
+      "name" : "Vaporeon",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1465",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "135" : { 
+      "name" : "Jolteon",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "1309",
+      "types" : [ { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          } ]
+    },
+  "136" : { 
+      "name" : "Flareon",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "1568",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "137" : { 
+      "name" : "Porygon",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "867",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "138" : { 
+      "name" : "Omanyte",
+      "rarity" : "Rare",
+      "spawn_rate" : "346",
+      "types" : [ 
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          },
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          }
+        ]
+    },
+  "139" : { 
+      "name" : "Omastar",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "6153",
+      "types" : [ 
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          },
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          }
+        ]
+    },
+  "140" : { 
+      "name" : "Kabuto",
+      "rarity" : "Rare",
+      "spawn_rate" : "356",
+      "types" : [ 
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          },
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          }
+        ]
+    },
+  "141" : { 
+      "name" : "Kabutops",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "2930",
+      "types" : [ 
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          },
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          }
+        ]
+    },
+  "142" : { 
+      "name" : "Aerodactyl",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "879",
+      "types" : [ 
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "143" : { 
+      "name" : "Snorlax",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "284",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "144" : { 
+      "name" : "Articuno",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "99999",
+      "types" : [ 
+          { 
+            "color" : "#98d8d8",
+            "type" : "Ice"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "145" : { 
+      "name" : "Zapdos",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "99999",
+      "types" : [ 
+          { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "146" : { 
+      "name" : "Moltres",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "99999",
+      "types" : [ 
+          { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "147" : { 
+      "name" : "Dratini",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "91",
+      "types" : [ { 
+            "color" : "#7038f8",
+            "type" : "Dragon"
+          } ]
+    },
+  "148" : { 
+      "name" : "Dragonair",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "699",
+      "types" : [ { 
+            "color" : "#7038f8",
+            "type" : "Dragon"
+          } ]
+    },
+  "149" : { 
+      "name" : "Dragonite",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "580",
+      "types" : [ 
+          { 
+            "color" : "#7038f8",
+            "type" : "Dragon"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "150" : { 
+      "name" : "Mewtwo",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "99999",
+      "types" : [ { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          } ]
+    },
+  "151" : { 
+      "name" : "Mew",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "99999",
+      "types" : [ { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          } ]
+    },
+  "152" : { 
+      "name" : "Chikorita",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          } ]
+    },
+  "153" : { 
+      "name" : "Bayleef",
+      "rarity" : "Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          } ]
+    },
+  "154" : { 
+      "name" : "Meganium",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          } ]
+    },
+  "155" : { 
+      "name" : "Cyndaquil",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "156" : { 
+      "name" : "Quilava",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "157" : { 
+      "name" : "Typhlosion",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "158" : { 
+      "name" : "Totodile",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "159" : { 
+      "name" : "Croconaw",
+      "rarity" : "Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "160" : { 
+      "name" : "Feraligatr",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "161" : { 
+      "name" : "Sentret",
+      "rarity" : "Common",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "162" : { 
+      "name" : "Furret",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "163" : { 
+      "name" : "Hoothoot",
+      "rarity" : "Common",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "164" : { 
+      "name" : "Noctowl",
+      "rarity" : "Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "165" : { 
+      "name" : "Ledyba",
+      "rarity" : "Common",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "166" : { 
+      "name" : "Ledian",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "167" : { 
+      "name" : "Spinarak",
+      "rarity" : "Common",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "168" : { 
+      "name" : "Ariados",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "169" : { 
+      "name" : "Crobat",
+      "rarity" : "Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "170" : { 
+      "name" : "Chinchou",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          }
+        ]
+    },
+  "171" : { 
+      "name" : "Lanturn",
+      "rarity" : "Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          }
+        ]
+    },
+  "172" : { 
+      "name" : "Pichu",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          } ]
+    },
+  "173" : { 
+      "name" : "Cleffa",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#e898e8",
+            "type" : "Fairy"
+          } ]
+    },
+  "174" : { 
+      "name" : "Igglybuff",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          },
+          { 
+            "color" : "#e898e8",
+            "type" : "Fairy"
+          }
+        ]
+    },
+  "175" : { 
+      "name" : "Togepi",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#e898e8",
+            "type" : "Fairy"
+          } ]
+    },
+  "176" : { 
+      "name" : "Togetic",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#e898e8",
+            "type" : "Fairy"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "177" : { 
+      "name" : "Natu",
+      "rarity" : "Common",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "178" : { 
+      "name" : "Xatu",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "179" : { 
+      "name" : "Mareep",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          } ]
+    },
+  "180" : { 
+      "name" : "Flaaffy",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          } ]
+    },
+  "181" : { 
+      "name" : "Ampharos",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          } ]
+    },
+  "182" : { 
+      "name" : "Bellossom",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          } ]
+    },
+  "183" : { 
+      "name" : "Marill",
+      "rarity" : "Common",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#e898e8",
+            "type" : "Fairy"
+          }
+        ]
+    },
+  "184" : { 
+      "name" : "Azumarill",
+      "rarity" : "Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#e898e8",
+            "type" : "Fairy"
+          }
+        ]
+    },
+  "185" : { 
+      "name" : "Sudowoodo",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          } ]
+    },
+  "186" : { 
+      "name" : "Politoed",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "187" : { 
+      "name" : "Hoppip",
+      "rarity" : "Common",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "188" : { 
+      "name" : "Skiploom",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "189" : { 
+      "name" : "Jumpluff",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "190" : { 
+      "name" : "Aipom",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "191" : { 
+      "name" : "Sunkern",
+      "rarity" : "Common",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          } ]
+    },
+  "192" : { 
+      "name" : "Sunflora",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          } ]
+    },
+  "193" : { 
+      "name" : "Yanma",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "194" : { 
+      "name" : "Wooper",
+      "rarity" : "Common",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          }
+        ]
+    },
+  "195" : { 
+      "name" : "Quagsire",
+      "rarity" : "Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          }
+        ]
+    },
+  "196" : { 
+      "name" : "Espeon",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          } ]
+    },
+  "197" : { 
+      "name" : "Umbreon",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#707070",
+            "type" : "Dark"
+          } ]
+    },
+  "198" : { 
+      "name" : "Murkrow",
+      "rarity" : "Common",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#707070",
+            "type" : "Dark"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "199" : { 
+      "name" : "Slowking",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          }
+        ]
+    },
+  "200" : { 
+      "name" : "Misdreavus",
+      "rarity" : "Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#705898",
+            "type" : "Ghost"
+          } ]
+    },
+  "201" : { 
+      "name" : "Unown",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          } ]
+    },
+  "202" : { 
+      "name" : "Wobbuffet",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          } ]
+    },
+  "203" : { 
+      "name" : "Girafarig",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          },
+          { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          }
+        ]
+    },
+  "204" : { 
+      "name" : "Pineco",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          } ]
+    },
+  "205" : { 
+      "name" : "Forretress",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#b8b8d0",
+            "type" : "Steel"
+          }
+        ]
+    },
+  "206" : { 
+      "name" : "Dunsparce",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "207" : { 
+      "name" : "Gligar",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "208" : { 
+      "name" : "Steelix",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#b8b8d0",
+            "type" : "Steel"
+          },
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          }
+        ]
+    },
+  "209" : { 
+      "name" : "Snubbull",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#e898e8",
+            "type" : "Fairy"
+          } ]
+    },
+  "210" : { 
+      "name" : "Granbull",
+      "rarity" : "Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#e898e8",
+            "type" : "Fairy"
+          } ]
+    },
+  "211" : { 
+      "name" : "Qwilfish",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#a040a0",
+            "type" : "Poison"
+          }
+        ]
+    },
+  "212" : { 
+      "name" : "Scizor",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#b8b8d0",
+            "type" : "Steel"
+          }
+        ]
+    },
+  "213" : { 
+      "name" : "Shuckle",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          }
+        ]
+    },
+  "214" : { 
+      "name" : "Heracross",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#a8b820",
+            "type" : "Bug"
+          },
+          { 
+            "color" : "#c03028",
+            "type" : "Fighting"
+          }
+        ]
+    },
+  "215" : { 
+      "name" : "Sneasel",
+      "rarity" : "Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#707070",
+            "type" : "Dark"
+          },
+          { 
+            "color" : "#98d8d8",
+            "type" : "Ice"
+          }
+        ]
+    },
+  "216" : { 
+      "name" : "Teddiursa",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "217" : { 
+      "name" : "Ursaring",
+      "rarity" : "Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "218" : { 
+      "name" : "Slugma",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "219" : { 
+      "name" : "Magcargo",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          },
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          }
+        ]
+    },
+  "220" : { 
+      "name" : "Swinub",
+      "rarity" : "Common",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#98d8d8",
+            "type" : "Ice"
+          },
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          }
+        ]
+    },
+  "221" : { 
+      "name" : "Piloswine",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#98d8d8",
+            "type" : "Ice"
+          },
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          }
+        ]
+    },
+  "222" : { 
+      "name" : "Corsola",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          }
+        ]
+    },
+  "223" : { 
+      "name" : "Remoraid",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "224" : { 
+      "name" : "Octillery",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "225" : { 
+      "name" : "Delibird",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#98d8d8",
+            "type" : "Ice"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "226" : { 
+      "name" : "Mantine",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "227" : { 
+      "name" : "Skarmory",
+      "rarity" : "Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#b8b8d0",
+            "type" : "Steel"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "228" : { 
+      "name" : "Houndour",
+      "rarity" : "Uncommon",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#707070",
+            "type" : "Dark"
+          },
+          { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          }
+        ]
+    },
+  "229" : { 
+      "name" : "Houndoom",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#707070",
+            "type" : "Dark"
+          },
+          { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          }
+        ]
+    },
+  "230" : { 
+      "name" : "Kingdra",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          },
+          { 
+            "color" : "#7038f8",
+            "type" : "Dragon"
+          }
+        ]
+    },
+  "231" : { 
+      "name" : "Phanpy",
+      "rarity" : "Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          } ]
+    },
+  "232" : { 
+      "name" : "Donphan",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          } ]
+    },
+  "233" : { 
+      "name" : "Porygon2",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "234" : { 
+      "name" : "Stantler",
+      "rarity" : "Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "235" : { 
+      "name" : "Smeargle",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "236" : { 
+      "name" : "Tyrogue",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#c03028",
+            "type" : "Fighting"
+          } ]
+    },
+  "237" : { 
+      "name" : "Hitmontop",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#c03028",
+            "type" : "Fighting"
+          } ]
+    },
+  "238" : { 
+      "name" : "Smoochum",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#98d8d8",
+            "type" : "Ice"
+          },
+          { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          }
+        ]
+    },
+  "239" : { 
+      "name" : "Elekid",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          } ]
+    },
+  "240" : { 
+      "name" : "Magby",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "241" : { 
+      "name" : "Miltank",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "242" : { 
+      "name" : "Blissey",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#8a8a59",
+            "type" : "Normal"
+          } ]
+    },
+  "243" : { 
+      "name" : "Raikou",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f8d030",
+            "type" : "Electric"
+          } ]
+    },
+  "244" : { 
+      "name" : "Entei",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          } ]
+    },
+  "245" : { 
+      "name" : "Suicune",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ { 
+            "color" : "#6890f0",
+            "type" : "Water"
+          } ]
+    },
+  "246" : { 
+      "name" : "Larvitar",
+      "rarity" : "Very Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          },
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          }
+        ]
+    },
+  "247" : { 
+      "name" : "Pupitar",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          },
+          { 
+            "color" : "#e0c068",
+            "type" : "Ground"
+          }
+        ]
+    },
+  "248" : { 
+      "name" : "Tyranitar",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#b8a038",
+            "type" : "Rock"
+          },
+          { 
+            "color" : "#707070",
+            "type" : "Dark"
+          }
+        ]
+    },
+  "249" : { 
+      "name" : "Lugia",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "250" : { 
+      "name" : "Ho-Oh",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#f08030",
+            "type" : "Fire"
+          },
+          { 
+            "color" : "#a890f0",
+            "type" : "Flying"
+          }
+        ]
+    },
+  "251" : { 
+      "name" : "Celebi",
+      "rarity" : "Ultra Rare",
+      "spawn_rate" : "",
+      "types" : [ 
+          { 
+            "color" : "#f85888",
+            "type" : "Psychic"
+          },
+          { 
+            "color" : "#78c850",
+            "type" : "Grass"
+          }
+        ]
+    },
+  "252" : { 
+      "name" : "Treecko",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "253" : { 
+      "name" : "Grovyle",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "254" : { 
+      "name" : "Sceptile",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "255" : { 
+      "name" : "Torchic",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "256" : { 
+      "name" : "Combusken",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "257" : { 
+      "name" : "Blaziken",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "258" : { 
+      "name" : "Mudkip",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "259" : { 
+      "name" : "Marshtomp",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "260" : { 
+      "name" : "Swampert",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "261" : { 
+      "name" : "Poochyena",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "262" : { 
+      "name" : "Mightyena",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "263" : { 
+      "name" : "Zigzagoon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "264" : { 
+      "name" : "Linoone",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "265" : { 
+      "name" : "Wurmple",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "266" : { 
+      "name" : "Silcoon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "267" : { 
+      "name" : "Beautifly",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "268" : { 
+      "name" : "Cascoon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "269" : { 
+      "name" : "Dustox",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "270" : { 
+      "name" : "Lotad",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "271" : { 
+      "name" : "Lombre",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "272" : { 
+      "name" : "Ludicolo",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "273" : { 
+      "name" : "Seedot",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "274" : { 
+      "name" : "Nuzleaf",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "275" : { 
+      "name" : "Shiftry",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "276" : { 
+      "name" : "Taillow",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "277" : { 
+      "name" : "Swellow",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "278" : { 
+      "name" : "Wingull",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "279" : { 
+      "name" : "Pelipper",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "280" : { 
+      "name" : "Ralts",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "281" : { 
+      "name" : "Kirlia",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "282" : { 
+      "name" : "Gardevoir",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "283" : { 
+      "name" : "Surskit",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "284" : { 
+      "name" : "Masquerain",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "285" : { 
+      "name" : "Shroomish",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "286" : { 
+      "name" : "Breloom",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "287" : { 
+      "name" : "Slakoth",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "288" : { 
+      "name" : "Vigoroth",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "289" : { 
+      "name" : "Slaking",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "290" : { 
+      "name" : "Nincada",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "291" : { 
+      "name" : "Ninjask",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "292" : { 
+      "name" : "Shedinja",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "293" : { 
+      "name" : "Whismur",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "294" : { 
+      "name" : "Loudred",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "295" : { 
+      "name" : "Exploud",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "296" : { 
+      "name" : "Makuhita",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "297" : { 
+      "name" : "Hariyama",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "298" : { 
+      "name" : "Azurill",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "299" : { 
+      "name" : "Nosepass",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "300" : { 
+      "name" : "Skitty",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "301" : { 
+      "name" : "Delcatty",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "302" : { 
+      "name" : "Sableye",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "303" : { 
+      "name" : "Mawile",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "304" : { 
+      "name" : "Aron",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "305" : { 
+      "name" : "Lairon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "306" : { 
+      "name" : "Aggron",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "307" : { 
+      "name" : "Meditite",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "308" : { 
+      "name" : "Medicham",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "309" : { 
+      "name" : "Electrike",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "310" : { 
+      "name" : "Manectric",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "311" : { 
+      "name" : "Plusle",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "312" : { 
+      "name" : "Minun",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "313" : { 
+      "name" : "Volbeat",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "314" : { 
+      "name" : "Illumise",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "315" : { 
+      "name" : "Roselia",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "316" : { 
+      "name" : "Gulpin",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "317" : { 
+      "name" : "Swalot",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "318" : { 
+      "name" : "Carvanha",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "319" : { 
+      "name" : "Sharpedo",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "320" : { 
+      "name" : "Wailmer",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "321" : { 
+      "name" : "Wailord",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "322" : { 
+      "name" : "Numel",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "323" : { 
+      "name" : "Camerupt",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "324" : { 
+      "name" : "Torkoal",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "325" : { 
+      "name" : "Spoink",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "326" : { 
+      "name" : "Grumpig",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "327" : { 
+      "name" : "Spinda",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "328" : { 
+      "name" : "Trapinch",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "329" : { 
+      "name" : "Vibrava",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "330" : { 
+      "name" : "Flygon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "331" : { 
+      "name" : "Cacnea",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "332" : { 
+      "name" : "Cacturne",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "333" : { 
+      "name" : "Swablu",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "334" : { 
+      "name" : "Altaria",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "335" : { 
+      "name" : "Zangoose",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "336" : { 
+      "name" : "Seviper",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "337" : { 
+      "name" : "Lunatone",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "338" : { 
+      "name" : "Solrock",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "339" : { 
+      "name" : "Barboach",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "340" : { 
+      "name" : "Whiscash",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "341" : { 
+      "name" : "Corphish",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "342" : { 
+      "name" : "Crawdaunt",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "343" : { 
+      "name" : "Baltoy",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "344" : { 
+      "name" : "Claydol",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "345" : { 
+      "name" : "Lileep",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "346" : { 
+      "name" : "Cradily",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "347" : { 
+      "name" : "Anorith",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "348" : { 
+      "name" : "Armaldo",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "349" : { 
+      "name" : "Feebas",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "350" : { 
+      "name" : "Milotic",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "351" : { 
+      "name" : "Castform",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "352" : { 
+      "name" : "Kecleon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "353" : { 
+      "name" : "Shuppet",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "354" : { 
+      "name" : "Banette",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "355" : { 
+      "name" : "Duskull",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "356" : { 
+      "name" : "Dusclops",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "357" : { 
+      "name" : "Tropius",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "358" : { 
+      "name" : "Chimecho",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "359" : { 
+      "name" : "Absol",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "360" : { 
+      "name" : "Wynaut",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "361" : { 
+      "name" : "Snorunt",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "362" : { 
+      "name" : "Glalie",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "363" : { 
+      "name" : "Spheal",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "364" : { 
+      "name" : "Sealeo",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "365" : { 
+      "name" : "Walrein",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "366" : { 
+      "name" : "Clamperl",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "367" : { 
+      "name" : "Huntail",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "368" : { 
+      "name" : "Gorebyss",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "369" : { 
+      "name" : "Relicanth",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "370" : { 
+      "name" : "Luvdisc",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "371" : { 
+      "name" : "Bagon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "372" : { 
+      "name" : "Shelgon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "373" : { 
+      "name" : "Salamence",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "374" : { 
+      "name" : "Beldum",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "375" : { 
+      "name" : "Metang",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "376" : { 
+      "name" : "Metagross",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "377" : { 
+      "name" : "Regirock",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "378" : { 
+      "name" : "Regice",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "379" : { 
+      "name" : "Registeel",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "380" : { 
+      "name" : "Latias",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "381" : { 
+      "name" : "Latios",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "382" : { 
+      "name" : "Kyogre",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "383" : { 
+      "name" : "Groudon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "384" : { 
+      "name" : "Rayquaza",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "385" : { 
+      "name" : "Jirachi",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "386" : { 
+      "name" : "Deoxys",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "387" : { 
+      "name" : "Turtwig",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "388" : { 
+      "name" : "Grotle",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "389" : { 
+      "name" : "Torterra",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "390" : { 
+      "name" : "Chimchar",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "391" : { 
+      "name" : "Monferno",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "392" : { 
+      "name" : "Infernape",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "393" : { 
+      "name" : "Piplup",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "394" : { 
+      "name" : "Prinplup",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "395" : { 
+      "name" : "Empoleon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "396" : { 
+      "name" : "Starly",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "397" : { 
+      "name" : "Staravia",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "398" : { 
+      "name" : "Staraptor",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "399" : { 
+      "name" : "Bidoof",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "400" : { 
+      "name" : "Bibarel",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "401" : { 
+      "name" : "Kricketot",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "402" : { 
+      "name" : "Kricketune",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "403" : { 
+      "name" : "Shinx",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "404" : { 
+      "name" : "Luxio",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "405" : { 
+      "name" : "Luxray",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "406" : { 
+      "name" : "Budew",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "407" : { 
+      "name" : "Roserade",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "408" : { 
+      "name" : "Cranidos",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "409" : { 
+      "name" : "Rampardos",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "410" : { 
+      "name" : "Shieldon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "411" : { 
+      "name" : "Bastiodon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "412" : { 
+      "name" : "Burmy",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "413" : { 
+      "name" : "Wormadam",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "414" : { 
+      "name" : "Mothim",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "415" : { 
+      "name" : "Combee",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "416" : { 
+      "name" : "Vespiquen",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "417" : { 
+      "name" : "Pachirisu",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "418" : { 
+      "name" : "Buizel",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "419" : { 
+      "name" : "Floatzel",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "420" : { 
+      "name" : "Cherubi",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "421" : { 
+      "name" : "Cherrim",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "422" : { 
+      "name" : "Shellos",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "423" : { 
+      "name" : "Gastrodon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "424" : { 
+      "name" : "Ambipom",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "425" : { 
+      "name" : "Drifloon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "426" : { 
+      "name" : "Drifblim",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "427" : { 
+      "name" : "Buneary",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "428" : { 
+      "name" : "Lopunny",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "429" : { 
+      "name" : "Mismagius",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "430" : { 
+      "name" : "Honchkrow",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "431" : { 
+      "name" : "Glameow",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "432" : { 
+      "name" : "Purugly",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "433" : { 
+      "name" : "Chingling",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "434" : { 
+      "name" : "Stunky",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "435" : { 
+      "name" : "Skuntank",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "436" : { 
+      "name" : "Bronzor",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "437" : { 
+      "name" : "Bronzong",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "438" : { 
+      "name" : "Bonsly",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "439" : { 
+      "name" : "Mime Jr.",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "440" : { 
+      "name" : "Happiny",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "441" : { 
+      "name" : "Chatot",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "442" : { 
+      "name" : "Spiritomb",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "443" : { 
+      "name" : "Gible",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "444" : { 
+      "name" : "Gabite",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "445" : { 
+      "name" : "Garchomp",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "446" : { 
+      "name" : "Munchlax",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "447" : { 
+      "name" : "Riolu",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "448" : { 
+      "name" : "Lucario",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "449" : { 
+      "name" : "Hippopotas",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "450" : { 
+      "name" : "Hippowdon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "451" : { 
+      "name" : "Skorupi",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "452" : { 
+      "name" : "Drapion",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "453" : { 
+      "name" : "Croagunk",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "454" : { 
+      "name" : "Toxicroak",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "455" : { 
+      "name" : "Carnivine",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "456" : { 
+      "name" : "Finneon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "457" : { 
+      "name" : "Lumineon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "458" : { 
+      "name" : "Mantyke",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "459" : { 
+      "name" : "Snover",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "460" : { 
+      "name" : "Abomasnow",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "461" : { 
+      "name" : "Weavile",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "462" : { 
+      "name" : "Magnezone",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "463" : { 
+      "name" : "Lickilicky",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "464" : { 
+      "name" : "Rhyperior",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "465" : { 
+      "name" : "Tangrowth",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "466" : { 
+      "name" : "Electivire",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "467" : { 
+      "name" : "Magmortar",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "468" : { 
+      "name" : "Togekiss",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "469" : { 
+      "name" : "Yanmega",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "470" : { 
+      "name" : "Leafeon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "471" : { 
+      "name" : "Glaceon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "472" : { 
+      "name" : "Gliscor",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "473" : { 
+      "name" : "Mamoswine",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "474" : { 
+      "name" : "Porygon-Z",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "475" : { 
+      "name" : "Gallade",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "476" : { 
+      "name" : "Probopass",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "477" : { 
+      "name" : "Dusknoir",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "478" : { 
+      "name" : "Froslass",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "479" : { 
+      "name" : "Rotom",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "480" : { 
+      "name" : "Uxie",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "481" : { 
+      "name" : "Mesprit",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "482" : { 
+      "name" : "Azelf",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "483" : { 
+      "name" : "Dialga",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "484" : { 
+      "name" : "Palkia",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "485" : { 
+      "name" : "Heatran",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "486" : { 
+      "name" : "Regigigas",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "487" : { 
+      "name" : "Giratina",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "488" : { 
+      "name" : "Cresselia",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "489" : { 
+      "name" : "Phione",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "490" : { 
+      "name" : "Manaphy",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "491" : { 
+      "name" : "Darkrai",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "492" : { 
+      "name" : "Shaymin",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "493" : { 
+      "name" : "Arceus",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "494" : { 
+      "name" : "Victini",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "495" : { 
+      "name" : "Snivy",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "496" : { 
+      "name" : "Servine",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "497" : { 
+      "name" : "Serperior",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "498" : { 
+      "name" : "Tepig",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "499" : { 
+      "name" : "Pignite",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "500" : { 
+      "name" : "Emboar",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "501" : { 
+      "name" : "Oshawott",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "502" : { 
+      "name" : "Dewott",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "503" : { 
+      "name" : "Samurott",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "504" : { 
+      "name" : "Patrat",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "505" : { 
+      "name" : "Watchog",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "506" : { 
+      "name" : "Lillipup",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "507" : { 
+      "name" : "Herdier",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "508" : { 
+      "name" : "Stoutland",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "509" : { 
+      "name" : "Purrloin",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "510" : { 
+      "name" : "Liepard",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "511" : { 
+      "name" : "Pansage",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "512" : { 
+      "name" : "Simisage",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "513" : { 
+      "name" : "Pansear",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "514" : { 
+      "name" : "Simisear",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "515" : { 
+      "name" : "Panpour",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "516" : { 
+      "name" : "Simipour",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "517" : { 
+      "name" : "Munna",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "518" : { 
+      "name" : "Musharna",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "519" : { 
+      "name" : "Pidove",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "520" : { 
+      "name" : "Tranquill",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "521" : { 
+      "name" : "Unfezant",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "522" : { 
+      "name" : "Blitzle",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "523" : { 
+      "name" : "Zebstrika",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "524" : { 
+      "name" : "Roggenrola",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "525" : { 
+      "name" : "Boldore",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "526" : { 
+      "name" : "Gigalith",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "527" : { 
+      "name" : "Woobat",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "528" : { 
+      "name" : "Swoobat",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "529" : { 
+      "name" : "Drilbur",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "530" : { 
+      "name" : "Excadrill",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "531" : { 
+      "name" : "Audino",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "532" : { 
+      "name" : "Timburr",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "533" : { 
+      "name" : "Gurdurr",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "534" : { 
+      "name" : "Conkeldurr",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "535" : { 
+      "name" : "Tympole",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "536" : { 
+      "name" : "Palpitoad",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "537" : { 
+      "name" : "Seismitoad",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "538" : { 
+      "name" : "Throh",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "539" : { 
+      "name" : "Sawk",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "540" : { 
+      "name" : "Sewaddle",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "541" : { 
+      "name" : "Swadloon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "542" : { 
+      "name" : "Leavanny",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "543" : { 
+      "name" : "Venipede",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "544" : { 
+      "name" : "Whirlipede",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "545" : { 
+      "name" : "Scolipede",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "546" : { 
+      "name" : "Cottonee",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "547" : { 
+      "name" : "Whimsicott",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "548" : { 
+      "name" : "Petilil",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "549" : { 
+      "name" : "Lilligant",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "550" : { 
+      "name" : "Basculin",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "551" : { 
+      "name" : "Sandile",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "552" : { 
+      "name" : "Krokorok",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "553" : { 
+      "name" : "Krookodile",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "554" : { 
+      "name" : "Darumaka",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "555" : { 
+      "name" : "Darmanitan",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "556" : { 
+      "name" : "Maractus",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "557" : { 
+      "name" : "Dwebble",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "558" : { 
+      "name" : "Crustle",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "559" : { 
+      "name" : "Scraggy",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "560" : { 
+      "name" : "Scrafty",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "561" : { 
+      "name" : "Sigilyph",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "562" : { 
+      "name" : "Yamask",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "563" : { 
+      "name" : "Cofagrigus",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "564" : { 
+      "name" : "Tirtouga",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "565" : { 
+      "name" : "Carracosta",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "566" : { 
+      "name" : "Archen",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "567" : { 
+      "name" : "Archeops",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "568" : { 
+      "name" : "Trubbish",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "569" : { 
+      "name" : "Garbodor",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "570" : { 
+      "name" : "Zorua",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "571" : { 
+      "name" : "Zoroark",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "572" : { 
+      "name" : "Minccino",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "573" : { 
+      "name" : "Cinccino",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "574" : { 
+      "name" : "Gothita",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "575" : { 
+      "name" : "Gothorita",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "576" : { 
+      "name" : "Gothitelle",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "577" : { 
+      "name" : "Solosis",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "578" : { 
+      "name" : "Duosion",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "579" : { 
+      "name" : "Reuniclus",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "580" : { 
+      "name" : "Ducklett",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "581" : { 
+      "name" : "Swanna",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "582" : { 
+      "name" : "Vanillite",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "583" : { 
+      "name" : "Vanillish",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "584" : { 
+      "name" : "Vanilluxe",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "585" : { 
+      "name" : "Deerling",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "586" : { 
+      "name" : "Sawsbuck",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "587" : { 
+      "name" : "Emolga",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "588" : { 
+      "name" : "Karrablast",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "589" : { 
+      "name" : "Escavalier",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "590" : { 
+      "name" : "Foongus",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "591" : { 
+      "name" : "Amoonguss",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "592" : { 
+      "name" : "Frillish",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "593" : { 
+      "name" : "Jellicent",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "594" : { 
+      "name" : "Alomomola",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "595" : { 
+      "name" : "Joltik",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "596" : { 
+      "name" : "Galvantula",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "597" : { 
+      "name" : "Ferroseed",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "598" : { 
+      "name" : "Ferrothorn",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "599" : { 
+      "name" : "Klink",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "600" : { 
+      "name" : "Klang",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "601" : { 
+      "name" : "Klinklang",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "602" : { 
+      "name" : "Tynamo",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "603" : { 
+      "name" : "Eelektrik",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "604" : { 
+      "name" : "Eelektross",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "605" : { 
+      "name" : "Elgyem",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "606" : { 
+      "name" : "Beheeyem",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "607" : { 
+      "name" : "Litwick",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "608" : { 
+      "name" : "Lampent",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "609" : { 
+      "name" : "Chandelure",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "610" : { 
+      "name" : "Axew",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "611" : { 
+      "name" : "Fraxure",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "612" : { 
+      "name" : "Haxorus",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "613" : { 
+      "name" : "Cubchoo",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "614" : { 
+      "name" : "Beartic",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "615" : { 
+      "name" : "Cryogonal",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "616" : { 
+      "name" : "Shelmet",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "617" : { 
+      "name" : "Accelgor",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "618" : { 
+      "name" : "Stunfisk",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "619" : { 
+      "name" : "Mienfoo",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "620" : { 
+      "name" : "Mienshao",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "621" : { 
+      "name" : "Druddigon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "622" : { 
+      "name" : "Golett",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "623" : { 
+      "name" : "Golurk",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "624" : { 
+      "name" : "Pawniard",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "625" : { 
+      "name" : "Bisharp",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "626" : { 
+      "name" : "Bouffalant",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "627" : { 
+      "name" : "Rufflet",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "628" : { 
+      "name" : "Braviary",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "629" : { 
+      "name" : "Vullaby",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "630" : { 
+      "name" : "Mandibuzz",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "631" : { 
+      "name" : "Heatmor",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "632" : { 
+      "name" : "Durant",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "633" : { 
+      "name" : "Deino",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "634" : { 
+      "name" : "Zweilous",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "635" : { 
+      "name" : "Hydreigon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "636" : { 
+      "name" : "Larvesta",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "637" : { 
+      "name" : "Volcarona",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "638" : { 
+      "name" : "Cobalion",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "639" : { 
+      "name" : "Terrakion",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "640" : { 
+      "name" : "Virizion",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "641" : { 
+      "name" : "Tornadus",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "642" : { 
+      "name" : "Thundurus",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "643" : { 
+      "name" : "Reshiram",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "644" : { 
+      "name" : "Zekrom",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "645" : { 
+      "name" : "Landorus",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "646" : { 
+      "name" : "Kyurem",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "647" : { 
+      "name" : "Keldeo",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "648" : { 
+      "name" : "Meloetta",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "649" : { 
+      "name" : "Genesect",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "650" : { 
+      "name" : "Chespin",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "651" : { 
+      "name" : "Quilladin",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "652" : { 
+      "name" : "Chesnaught",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "653" : { 
+      "name" : "Fennekin",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "654" : { 
+      "name" : "Braixen",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "655" : { 
+      "name" : "Delphox",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "656" : { 
+      "name" : "Froakie",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "657" : { 
+      "name" : "Frogadier",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "658" : { 
+      "name" : "Greninja",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "659" : { 
+      "name" : "Bunnelby",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "660" : { 
+      "name" : "Diggersby",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "661" : { 
+      "name" : "Fletchling",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "662" : { 
+      "name" : "Fletchinder",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "663" : { 
+      "name" : "Talonflame",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "664" : { 
+      "name" : "Scatterbug",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "665" : { 
+      "name" : "Spewpa",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "666" : { 
+      "name" : "Vivillon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "667" : { 
+      "name" : "Litleo",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "668" : { 
+      "name" : "Pyroar",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "669" : { 
+      "name" : "Flabébé",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "670" : { 
+      "name" : "Floette",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "671" : { 
+      "name" : "Florges",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "672" : { 
+      "name" : "Skiddo",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "673" : { 
+      "name" : "Gogoat",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "674" : { 
+      "name" : "Pancham",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "675" : { 
+      "name" : "Pangoro",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "676" : { 
+      "name" : "Furfrou",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "677" : { 
+      "name" : "Espurr",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "678" : { 
+      "name" : "Meowstic",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "679" : { 
+      "name" : "Honedge",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "680" : { 
+      "name" : "Doublade",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "681" : { 
+      "name" : "Aegislash",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "682" : { 
+      "name" : "Spritzee",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "683" : { 
+      "name" : "Aromatisse",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "684" : { 
+      "name" : "Swirlix",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "685" : { 
+      "name" : "Slurpuff",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "686" : { 
+      "name" : "Inkay",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "687" : { 
+      "name" : "Malamar",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "688" : { 
+      "name" : "Binacle",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "689" : { 
+      "name" : "Barbaracle",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "690" : { 
+      "name" : "Skrelp",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "691" : { 
+      "name" : "Dragalge",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "692" : { 
+      "name" : "Clauncher",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "693" : { 
+      "name" : "Clawitzer",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "694" : { 
+      "name" : "Helioptile",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "695" : { 
+      "name" : "Heliolisk",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "696" : { 
+      "name" : "Tyrunt",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "697" : { 
+      "name" : "Tyrantrum",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "698" : { 
+      "name" : "Amaura",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "699" : { 
+      "name" : "Aurorus",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "700" : { 
+      "name" : "Sylveon",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "701" : { 
+      "name" : "Hawlucha",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "702" : { 
+      "name" : "Dedenne",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "703" : { 
+      "name" : "Carbink",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "704" : { 
+      "name" : "Goomy",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "705" : { 
+      "name" : "Sliggoo",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "706" : { 
+      "name" : "Goodra",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "707" : { 
+      "name" : "Klefki",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "708" : { 
+      "name" : "Phantump",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "709" : { 
+      "name" : "Trevenant",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "710" : { 
+      "name" : "Pumpkaboo",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "711" : { 
+      "name" : "Gourgeist",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "712" : { 
+      "name" : "Bergmite",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "713" : { 
+      "name" : "Avalugg",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "714" : { 
+      "name" : "Noibat",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "715" : { 
+      "name" : "Noivern",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "716" : { 
+      "name" : "Xerneas",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "717" : { 
+      "name" : "Yveltal",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "718" : { 
+      "name" : "Zygarde",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "719" : { 
+      "name" : "Diancie",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "720" : { 
+      "name" : "Hoopa",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    },
+  "721" : { 
+      "name" : "Volcanion",
+      "rarity" : "",
+      "spawn_rate" : "",
+      "types" : [  ]
+    }
+}
