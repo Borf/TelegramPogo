@@ -1,0 +1,6 @@
+{
+    "api_token" : "",
+    "gmap_key" : "",
+    "port" : 4000,
+    "mongodb" : "mongodb://localhost/pogobot"
+}
