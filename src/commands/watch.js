@@ -2,7 +2,8 @@
 
 var pokedex = require('../pokedex'),
     logger = require('winston'),
-    config   = require('config.json')('./config.json');
+    config   = require('config.json')('./config.json'),
+    buildkeyboard = require('../buildkeyboard');
 
 /**
  * Start command
@@ -36,8 +37,7 @@ module.exports = {
         user.save();
         return { 
             msg : 'What would you like to watch?',
-            keyboard : [ [ { "text" : "Pokemon" }, { "text" : "Raids" } ],
-                         [ { "text" : "My IVs" }, { "text" : "Cancel" } ] ]
+            keyboard : buildkeyboard([ "Pokemon", "Raids", "High IV", "My IVs", "Gyms", "Cancel"])
         };
     },
 
@@ -58,12 +58,51 @@ module.exports = {
                 return { msg : 'Ok' }
             }
             else
-                return { 
-                    msg : 'What would you like to watch?',
-                    keyboard : [ [ { "text" : "Pokemon" }, { "text" : "Raids" } ],
-                                [ { "text" : "High IV" }, { "text" : "My IVs" } ],
-                                [ { "text" : "Gyms" }, { "text" : "Cancel" } ] ]
-                };  
+                return "I don't understand";
+        } else if(user.state == "watch pokemon")
+        {
+            var pokemon = pokedex.getPokemonIdByFuzzyName(msg);
+            if(pokemon.length > 20)
+                return { msg : 'Too many pokemon found: ' + pokemon.length + ' found', keyboard: null };
+            else if(pokemon.length > 1)
+                return { msg : 'Please select a pokemon:', keyboard : buildkeyboard(pokemon.map(p => p.name)) };           
+            else if(pokemon.length == 1)
+            {
+                user.tmp.pokemon = pokemon[0];
+                user.markModified('tmp');
+                user.state = 'watch pokemon filter';
+                user.save();
+                return { msg : 'Do you want IV filtering?', keyboard: buildkeyboard([">80", ">90", ">95", "100", "No Filtering"])}
+            }
+            else
+                return "wtf";
+        }
+        else if(user.state == "watch pokemon filter")
+        {
+            var miniv = 0;
+            if(msg[0] == ">")
+                miniv = parseInt(msg.substring(1));
+            else if(msg == "100")
+                miniv = 100;
+            else if(msg == "No Filtering")
+                miniv = 0;
+            else
+                return { msg : "Please enter IV filter", keyboard : "keep" };
+
+            user.tmp.iv = miniv;
+            user.markModified('tmp');
+            user.state = "watch pokemon priority";
+            user.save();
+            return { msg : "What is the priority of this pokemon? You can use this tag for filtering later on", keyboard : buildkeyboard([ "high", "medium", "low" ])};
+        }
+        else if(user.state == "watch pokemon priority")
+        {
+            if(msg != "high" && msg != "medium" && msg != "low")
+                return { msg : "Priority please..." };
+            user.addPokemonWatch(user.tmp.pokemon.id, user.tmp.iv, msg);
+            user.state = "";
+            user.save();
+            return { msg : "Added pokemon " + user.tmp.pokemon.name};
         }
 
         return null;

@@ -11,6 +11,13 @@ var fs = require('fs'),
     util = require('util'),
     pokedex = JSON.parse(fs.readFileSync(__dirname + '/../db/pokemon.json'));
 
+
+for(var id in pokedex)
+{
+    pokedex[id].id = parseInt(id);
+}
+
+
 /** Dictionary of known Pokémon */
 exports.pokedex = pokedex;
 
@@ -27,7 +34,7 @@ exports.getPokemonIdByName = function(name) {
 
 exports.getPokemonIdByFuzzyName = function(name) {
     return _.filter(pokedex, function(p) {
-        return p.toLowerCase().indexOf(name.toLowerCase()) != -1;
+        return p.name.toLowerCase().indexOf(name.toLowerCase()) != -1;
     });
 };
 

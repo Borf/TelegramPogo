@@ -21,6 +21,7 @@ glob.sync( './src/commands/*.js' ).forEach( function( file ) {
                 logger.error(err);
                 return;
             }
+            user.state = "";
             var replyMessage = command.callback(msg, match, user, created, bot);
 
             var keyboard = generateReplyKeyboard(user);
@@ -71,6 +72,8 @@ glob.sync( './src/commands/*.js' ).forEach( function( file ) {
 
 bot.on('message', function(msg)
 {
+    if(msg.text[0] == '/')
+      return;
     User.findOrCreate({ telegramId: msg.from.id }, function(err, user, created) {
         if (err) 
         {
@@ -116,11 +119,15 @@ bot.on('message', function(msg)
                 if(replyMessage != '')
                 {
                     if(keyboard)
+                    {
+                        if(keyboard == "keep")
+                            keyboard = null;
                         bot.sendMessage(msg.from.id, replyMessage, {
                             reply_markup: {
                                 keyboard: keyboard 
                             }
                         });
+                    }
                     else
                         bot.sendMessage(msg.from.id, replyMessage, {
                             reply_markup: {

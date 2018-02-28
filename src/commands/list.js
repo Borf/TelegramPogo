@@ -2,26 +2,26 @@
 
 var pokedex = require('../pokedex'),
     logger = require('winston'),
-    config   = require('config.json')('./config.json');
+    util = require('util');
 
 /**
- * Start command
- * @module command/start
+ * Stop command
+ * @module command/stop
  */
 module.exports = {
 
     /** Command name */
-    name: '/start',
+    name: '/list',
 
     /** Command regex pattern */
-    pattern: /\/start/i,
+    pattern: /\/list/i,
 
     /** Command's description to be listed in /help */
-    description: '/start - Start the bot',
+    description: '/list - Shows your watched stuff',
 
     /** Is the command listed in Telegram's command list? */
     list: function(user) {
-        return user.active === false;
+        return user.active;
     },
 
     /**
@@ -32,17 +32,17 @@ module.exports = {
      * @param {Boolean} created - Was the user created as a result of the command call?
      */
     callback: function(msg, match, user, created) {
-        if (created) {
-            logger.info('Created new user with id %s', user.telegramId);
-            // New users start with the default watchlist
-            user.watchlist = [];
-        } else {
-            user.active = true;
-            user.save();
-        }
-
-        logger.info('User %s is now active', user.telegramId);
-        return 'Bot activated! Type /stop to stop.';
+        var pokemon = "";
+        user.watchlist.forEach(p =>
+        {
+            pokemon += pokedex.pokedex[p.id].name;
+            if(p.iv > 0)
+                pokemon += ", only if IV > " + p.iv;
+            else   
+                pokemon += ", no IV filter";
+            pokemon += " (" + p.priority + ")\n";
+        })
+        return pokemon;
     }
 
 };
