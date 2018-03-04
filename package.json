@@ -19,5 +19,16 @@
   "bugs": {
     "url": "https://github.com/Borf/TelegramPogo/issues"
   },
-  "homepage": "https://github.com/Borf/TelegramPogo#readme"
+  "homepage": "https://github.com/Borf/TelegramPogo#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "config.json": "0.0.4",
+    "express": "^4.16.2",
+    "glob": "^7.1.2",
+    "moment": "^2.21.0",
+    "mongoose": "^5.0.7",
+    "mongoose-findorcreate": "^3.0.0",
+    "node-telegram-bot-api": "^0.30.0",
+    "winston": "^2.4.0"
+  }
 }

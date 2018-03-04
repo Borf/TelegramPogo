@@ -24,12 +24,16 @@ var UserSchema = new Schema({
         type: [Schema.Types.String],
         default: ""
 	},
-	tmp : {},
+	tmp : {
+		type: Schema.Types.Mixed,
+		default: {},
+	},
 	settings : 
 	{
 		ivname : String,
 		location: [Number],
-		priority : String
+		priority : String,
+		miniv : { type : Number, default: 100 }
 	}
 });
 

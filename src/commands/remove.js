@@ -61,7 +61,9 @@ module.exports = {
                 return "I don't understand";
         } else if(user.state == "remove pokemon")
         {
-            var ids = pokedex.getPokemonIdByFuzzyName(msg);
+            var ids = pokedex.getPokemonIdByName(msg);
+            if(ids.length != 1)
+                ids = pokedex.getPokemonIdByFuzzyName(msg);
             if(ids.length != 1)
                 return { msg : "Unknown pokemon name", keyboard:null };
             user.removePokemonWatch(ids[0].id);

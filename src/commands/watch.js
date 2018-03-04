@@ -61,7 +61,9 @@ module.exports = {
                 return "I don't understand";
         } else if(user.state == "watch pokemon")
         {
-            var pokemon = pokedex.getPokemonIdByFuzzyName(msg);
+            var pokemon = pokedex.getPokemonIdByName(msg);
+            if(pokemon.length != 1)
+                pokemon = pokedex.getPokemonIdByFuzzyName(msg);
             if(pokemon.length > 20)
                 return { msg : 'Too many pokemon found: ' + pokemon.length + ' found', keyboard: null };
             else if(pokemon.length > 1)

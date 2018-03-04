@@ -27,8 +27,8 @@ exports.pokedex = pokedex;
  * @returns {Number|undefined} Pokédex number for the Pokémon
  */
 exports.getPokemonIdByName = function(name) {
-    return _.findKey(pokedex, function(p) {
-        return p.toLowerCase() === name.toLowerCase();
+    return _.filter(pokedex, function(p) {
+        return p.name.toLowerCase() === name.toLowerCase();
     });
 };
 

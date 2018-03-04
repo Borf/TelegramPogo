@@ -147,10 +147,18 @@ module.exports =
 {
     bot : bot,
 
-    sendText : function(text)
-    {
-
+    sendNotification : function(users, caption, coords) {
+        var that = this;
+        users.map(function(user) {
+            that.bot.sendMessage(user, caption)
+            .then(function() {
+                return that.bot.sendLocation(user, coords[0], coords[1], {
+                    disable_notification: true
+                });
+            });
+        });
     }
+
 
 };
 
