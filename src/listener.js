@@ -157,8 +157,18 @@ function handleEncounter(encounter)
             }
         });
     });
-
 }
+
+
+//cleanup
+setInterval(function()
+{
+
+
+
+}, 60000);
+
+
 
 function timeToDisappear(timestamp) {
     var diff = moment.unix(timestamp).diff(moment());

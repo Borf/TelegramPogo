@@ -37,7 +37,7 @@ module.exports = {
         user.save();
         return { 
             msg : 'What would you like to watch?',
-            keyboard : buildkeyboard([ "Pokemon", "Raids", "High IV", "My IVs", "Gyms", "Cancel"])
+            keyboard : buildkeyboard([ "Pokemon", "Raids", "Gyms", "Cancel"])
         };
     },
 
