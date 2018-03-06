@@ -12,10 +12,11 @@ var encounters = {};
 var raids = {};
 var gyms = {};
 
-
 function fix(id)
 {
-    return id>>>8;
+    var newId = id>>>8;
+    console.log("Id " + id + "turns into " + newId);
+    return newId;
 }
 
 queue.on('pokemon', function(payload)
