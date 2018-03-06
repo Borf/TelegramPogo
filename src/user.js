@@ -40,13 +40,16 @@ var UserSchema = new Schema({
 UserSchema.plugin(require('mongoose-findorcreate'));
 
 
-UserSchema.methods.addPokemonWatch = function(pokemon, iv, priority)
+UserSchema.methods.addPokemonWatch = function(pokemon, iv, priority, showunknowniv)
 {
 	var found = this.watchlist.find(p => p.id == pokemon);
 
 	if(!found)
 	{
-		this.watchlist.push({id:pokemon,iv:iv,priority:priority});
+		var watch = {id:pokemon,iv:iv,priority:priority};
+		if(iv > 0)
+			watch.showunknowniv = showunknowniv;
+		this.watchlist.push(watch);
 	}
 }
 

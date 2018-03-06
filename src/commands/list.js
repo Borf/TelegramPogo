@@ -37,7 +37,11 @@ module.exports = {
         {
             pokemon += pokedex.pokedex[p.id].name;
             if(p.iv > 0)
+            {
                 pokemon += ", only if IV > " + p.iv;
+                if(p.showunknowniv)
+                    pokemon += ", also show if no IV is known";
+            }
             else   
                 pokemon += ", no IV filter";
             pokemon += " (" + p.priority + ")\n";

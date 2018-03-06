@@ -51,7 +51,12 @@ module.exports = {
                 user.state = "watch pokemon";
                 user.save();
                 return { msg : 'Please type the name of the pokemon', keyboard: null }
-            } else  if(msg.toLowerCase() == "cancel")
+            } else if(user.state == "raids")
+            {
+                user.state = "watch raid";
+                user.save();
+                return { msg : 'What would you like to change?', keyboard:[ 'Show raids', 'Hide raids', 'Show pokemon', 'Hide Pokemon', 'Cancel' ]}
+            }else  if(msg.toLowerCase() == "cancel")
             {
                 user.state = "";
                 user.save();
@@ -86,6 +91,8 @@ module.exports = {
                 miniv = parseInt(msg.substring(1));
             else if(msg == "100")
                 miniv = 100;
+            else if(!isNaN(parseInt(msg)))
+                miniv = parseInt(msg);
             else if(msg == "No Filtering")
                 miniv = 0;
             else
@@ -93,15 +100,46 @@ module.exports = {
 
             user.tmp.iv = miniv;
             user.markModified('tmp');
+
+            if(miniv != 0)
+            {
+                user.state = "watch pokemon filter2";
+                user.save();
+                return { msg : "Would you like to see pokemon with a missing IV?", keyboard : buildkeyboard([ "yes", "no", 'cancel' ])};
+            }
             user.state = "watch pokemon priority";
             user.save();
-            return { msg : "What is the priority of this pokemon? You can use this tag for filtering later on", keyboard : buildkeyboard([ "high", "medium", "low" ])};
+            return { msg : "What is the priority of this pokemon? . High priority pokemon will always be shown, low priority pokemon will only be shown if when you're active", keyboard : buildkeyboard([ "high", "low", 'cancel' ])};
+        }
+        else if(user.state == "watch pokemon filter2")
+        {
+            if(msg.toLowerCase() == 'yes')
+                user.tmp.showunknowniv = true;
+            else if(msg.toLowerCase() == 'no')
+                user.tmp.showunknowniv = false;
+            else
+                return { msg : "Would you like to see pokemon with a missing IV?", keyboard : buildkeyboard([ "yes", "no", 'cancel' ])};
+
+                user.markModified('tmp');
+            user.state = "watch pokemon priority";
+            user.save();
+            return { msg : "What is the priority of this pokemon? . High priority pokemon will always be shown, low priority pokemon will only be shown if when you're active", keyboard : buildkeyboard([ "high", "low", 'cancel' ])};
         }
         else if(user.state == "watch pokemon priority")
         {
+            if(msg == 'cancel')
+            {
+                user.state = '';
+                user.save();
+                return "ok";
+            }
             if(msg != "high" && msg != "medium" && msg != "low")
                 return { msg : "Priority please..." };
-            user.addPokemonWatch(user.tmp.pokemon.id, user.tmp.iv, msg);
+            if(user.tmp.iv > 0)
+                user.addPokemonWatch(user.tmp.pokemon.id, user.tmp.iv, msg, user.tmp.showunknowniv);
+            else
+                user.addPokemonWatch(user.tmp.pokemon.id, user.tmp.iv, msg);
+                
             user.state = "";
             user.save();
             return { msg : "Added pokemon " + user.tmp.pokemon.name};

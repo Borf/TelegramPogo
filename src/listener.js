@@ -73,8 +73,39 @@ queue.on('iv', function(payload)
 
 queue.on('raid', function(payload)
 {
-    logger.info("Got raid: ", payload);
+    var gym = payload.gym_id;
+    if(gyms[payload.gym_id] && gyms[payload.gym_id].details)
+        gym = gyms[payload.gym_id].details.name;
+        
+    logger.info("Pokemon " + pokemon[payload.pokemon_id] + " is having a raid party at " + gym);
+    logger.info("Ends in " + Math.round((payload.end - (Date.now()/1000))/60) + " minutes");
+    logger.info("Starts in " + Math.round((payload.start - (Date.now()/1000))/60) + " minutes");
+    if(raids[payload.spawn])
+    {
+        logger.info("Duplicate raid, ignoring");
+        return;
+    }
 
+    User.find({ active: true })
+        .then(function(users) {
+            users = users.filter(function(user) { return user.testRaidFilter(payload); });
+
+            var userIds = users.map(function(user) {
+                return user.telegramId;
+            });
+
+            if (userIds.length) {
+                bot.sendNotification(
+                    userIds,
+                    'A ' + pokemon[payload.pokemon_id] + ' raid is starting at ' + gym + '\n' +
+                    "Starts in " + Math.round((payload.start - (Date.now()/1000))/60) + " minutes, " +
+                    "Ends in " + Math.round((payload.end - (Date.now()/1000))/60) + " minutes\n" +
+                    "Disappears at " + disappearTime(payload.end) + "\n" +
+                    "Moves: " + moves[payload.move_1].name + ", " + moves[payload.move_2].name,
+                    [payload.latitude, payload.longitude]
+                );
+            }
+        });
 });
 
 
@@ -119,7 +150,7 @@ function handleEncounter(encounter)
     .then(function(users) {
         var userIds = users.filter(function(user) {
             if(iv == 0)
-                return true;
+                return user.watchlist.find(p => p.id == encounter.pokemon_id && (p.iv == 0 || p.showunknowniv)) !== undefined;
             return user.watchlist.find(p => p.id == encounter.pokemon_id && p.iv <= iv) !== undefined;
         }).map(function(user) {
             return user.telegramId;
@@ -163,10 +194,11 @@ function handleEncounter(encounter)
 //cleanup
 setInterval(function()
 {
-
-
-
-}, 60000);
+    encounters = _.filter(seen, function(encounter) {
+        return encounter.disappear > moment().unix();
+    });
+    logger.debug('Cleared seen and expired pokemon');
+}, 60 * 1000);
 
 
 
