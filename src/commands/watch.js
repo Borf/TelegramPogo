@@ -139,10 +139,39 @@ module.exports = {
                 user.addPokemonWatch(user.tmp.pokemon.id, user.tmp.iv, msg, user.tmp.showunknowniv);
             else
                 user.addPokemonWatch(user.tmp.pokemon.id, user.tmp.iv, msg);
-                
+
             user.state = "";
             user.save();
             return { msg : "Added pokemon " + user.tmp.pokemon.name};
+        } else if (user.state == "watch raid")
+        {
+            if(msg.toLowerCase() == 'show raids')
+            {
+                user.state = "watch raid showlevel";
+                user.save();
+                return { txt: "What raid level would you like to see?", keyboard: [ "1", "2", "3", "4", "5" ] };
+            } else if(msg.toLowerCase() == 'Hide raids')
+            {
+                user.state = "watch raid hidelevel";
+                user.save();
+                return { txt: "What raid level would you like to hide?", keyboard: [ "1", "2", "3", "4", "5" ] };
+            } else if(msg.toLowerCase() == 'show pokemon')
+            {
+                user.state = "watch raid showpoke";
+                user.save();
+                return { txt: "What raid pokemon would you like to see?", keyboard: null };
+            } else if(msg.toLowerCase() == 'Hide Pokemon')
+            {
+                user.state = "watch raid hidepoke";
+                user.save();
+                return { txt: "What raid pokemon would you like to hide?", keyboard: null };
+            } else if(msg.toLowerCase() == 'Cancel')
+            {
+                user.state = '';
+                user.save();
+                return "ok";
+            }
+
         }
 
         return null;

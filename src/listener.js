@@ -3,7 +3,8 @@ var events = require('events'),
     logger = require('winston'),
     User = require('./user'),
     bot = require('./bot'),
-    moment = require('moment');
+    moment = require('moment'),
+    _ = require('lodash');
 
 
 var queue = new events.EventEmitter();
@@ -195,11 +196,11 @@ function handleEncounter(encounter)
 //cleanup
 setInterval(function()
 {
-    encounters = _.filter(seen, function(encounter) {
+    encounters = _.filter(encounters, function(encounter) {
         return encounter.disappear > moment().unix();
     });
     logger.debug('Cleared seen and expired pokemon');
-}, 60 * 1000);
+}, 6 * 1000);
 
 
 
