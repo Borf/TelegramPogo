@@ -171,7 +171,47 @@ module.exports = {
                 user.save();
                 return "ok";
             }
-
+        } else if(user.state == "watch raid showlevel" || user.state == "watch raid hidelevel")
+        {
+            user.state = '';
+            user.save();
+            var level = parseInt(msg);
+            if(!isNaN(level))
+                addRaidFilter(
+                    {
+                        'type' : 'level',
+                        'positive' : user.state == "watch raid showlevel",
+                        'level' : parseInt(msg)
+                    }
+                )
+            else
+                return "Did not understand level";
+            return "Raid filter added";
+        }
+        else if(user.state == "watch raid showpokemon" || user.state == "watch raid hidepokemon")
+        {
+            var pokemon = pokedex.getPokemonIdByName(msg);
+            if(pokemon.length != 1)
+                pokemon = pokedex.getPokemonIdByFuzzyName(msg);
+            if(pokemon.length > 20)
+                return { msg : 'Too many pokemon found: ' + pokemon.length + ' found', keyboard: null };
+            else if(pokemon.length > 1)
+                return { msg : 'Please select a pokemon:', keyboard : buildkeyboard(pokemon.map(p => p.name)) };           
+            else if(pokemon.length == 1)
+            {
+                addRaidFilter(
+                    {
+                        'type' : 'pokemon',
+                        'positive' : user.state == "watch raid showpokemon",
+                        'pokemon' : pokemon[0].id
+                    });
+    
+                user.state = '';
+                user.save();
+                return 'Raid filter for pokemon ' + pokemon[0].name + ' added';
+            }
+            else
+                return "wtf";
         }
 
         return null;
