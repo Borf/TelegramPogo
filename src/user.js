@@ -24,6 +24,10 @@ var UserSchema = new Schema({
         type: [Schema.Types.String],
         default: ""
 	},
+	ivwatch : {
+		type : [Number],
+		default: []
+	},
 	tmp : {
 		type: Schema.Types.Mixed,
 		default: {},

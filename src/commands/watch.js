@@ -51,11 +51,11 @@ module.exports = {
                 user.state = "watch pokemon";
                 user.save();
                 return { msg : 'Please type the name of the pokemon', keyboard: null }
-            } else if(user.state == "raids")
+            } else if(msg.toLowerCase() == "raids")
             {
                 user.state = "watch raid";
                 user.save();
-                return { msg : 'What would you like to change?', keyboard:[ 'Show raids', 'Hide raids', 'Show pokemon', 'Hide Pokemon', 'Cancel' ]}
+                return { msg : 'What would you like to change?', keyboard: buildkeyboard([ 'Show raids', 'Hide raids', 'Show pokemon', 'Hide Pokemon', 'Cancel' ])}
             }else  if(msg.toLowerCase() == "cancel")
             {
                 user.state = "";
@@ -149,22 +149,22 @@ module.exports = {
             {
                 user.state = "watch raid showlevel";
                 user.save();
-                return { txt: "What raid level would you like to see?", keyboard: [ "1", "2", "3", "4", "5" ] };
-            } else if(msg.toLowerCase() == 'Hide raids')
+                return { msg: "What raid level would you like to see?", keyboard: buildkeyboard([ "1", "2", "3", "4", "5" ]) };
+            } else if(msg.toLowerCase() == 'hide raids')
             {
                 user.state = "watch raid hidelevel";
                 user.save();
-                return { txt: "What raid level would you like to hide?", keyboard: [ "1", "2", "3", "4", "5" ] };
+                return { msg: "What raid level would you like to hide?", keyboard: buildkeyboard([ "1", "2", "3", "4", "5" ]) };
             } else if(msg.toLowerCase() == 'show pokemon')
             {
                 user.state = "watch raid showpoke";
                 user.save();
-                return { txt: "What raid pokemon would you like to see?", keyboard: null };
+                return { msg: "What raid pokemon would you like to see?", keyboard: null };
             } else if(msg.toLowerCase() == 'Hide Pokemon')
             {
                 user.state = "watch raid hidepoke";
                 user.save();
-                return { txt: "What raid pokemon would you like to hide?", keyboard: null };
+                return { msg: "What raid pokemon would you like to hide?", keyboard: null };
             } else if(msg.toLowerCase() == 'Cancel')
             {
                 user.state = '';
@@ -173,22 +173,25 @@ module.exports = {
             }
         } else if(user.state == "watch raid showlevel" || user.state == "watch raid hidelevel")
         {
+            var positive = user.state == "watch raid showlevel";
             user.state = '';
-            user.save();
             var level = parseInt(msg);
             if(!isNaN(level))
-                addRaidFilter(
+                user.addRaidFilter(
                     {
                         'type' : 'level',
-                        'positive' : user.state == "watch raid showlevel",
+                        'positive' : positive,
                         'level' : parseInt(msg)
                     }
                 )
             else
+            {
+                user.save();
                 return "Did not understand level";
+            }
             return "Raid filter added";
         }
-        else if(user.state == "watch raid showpokemon" || user.state == "watch raid hidepokemon")
+        else if(user.state == "watch raid showpoke" || user.state == "watch raid hidepoke")
         {
             var pokemon = pokedex.getPokemonIdByName(msg);
             if(pokemon.length != 1)
@@ -199,15 +202,14 @@ module.exports = {
                 return { msg : 'Please select a pokemon:', keyboard : buildkeyboard(pokemon.map(p => p.name)) };           
             else if(pokemon.length == 1)
             {
-                addRaidFilter(
+                var positive = user.state == "watch raid showpoke";
+                user.state = '';
+                user.addRaidFilter(
                     {
                         'type' : 'pokemon',
-                        'positive' : user.state == "watch raid showpokemon",
+                        'positive' : positive,
                         'pokemon' : pokemon[0].id
                     });
-    
-                user.state = '';
-                user.save();
                 return 'Raid filter for pokemon ' + pokemon[0].name + ' added';
             }
             else

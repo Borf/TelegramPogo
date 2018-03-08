@@ -16,7 +16,7 @@ var gyms = {};
 function fix(id)
 {
     var newId = id>>>8;
-    console.log("Id " + id + "turns into " + newId);
+    //console.log("Id " + id + "turns into " + newId);
     return newId;
 }
 
@@ -34,8 +34,13 @@ queue.on('pokemon', function(payload)
     {
         return function()
         {
-            handleEncounter(encounters[encounter_id]);
-            encounters[encounter_id].timeout = null;
+            if(encounters[encounter_id])
+            {
+                handleEncounter(encounters[encounter_id]);
+                encounters[encounter_id].timeout = null;
+            }
+            else
+            logger.error("error getting encounter")
         }        
     }(encounter_id), 90000);
 });
@@ -58,6 +63,8 @@ queue.on('iv', function(payload)
             }
             else
                 console.log("I'm late!");
+
+            console.log(payload.disappear_time);
             encounters[encounter_id].individual_attack = payload.individual_attack;
             encounters[encounter_id].individual_defense = payload.individual_defense;
             encounters[encounter_id].individual_stamina = payload.individual_stamina;
@@ -79,7 +86,7 @@ queue.on('raid', function(payload)
     if(gyms[payload.gym_id] && gyms[payload.gym_id].details)
         gym = gyms[payload.gym_id].details.name;
         
-    logger.info("Pokemon " + pokemon[payload.pokemon_id] + " is having a raid party at " + gym);
+    logger.info("Pokemon " + pokedex.pokedex[payload.pokemon_id].name + " is having a raid party at " + gym);
     logger.info("Ends in " + Math.round((payload.end - (Date.now()/1000))/60) + " minutes");
     logger.info("Starts in " + Math.round((payload.start - (Date.now()/1000))/60) + " minutes");
     if(raids[payload.spawn])
@@ -125,21 +132,128 @@ queue.on('gym_details', function(payload)
     gyms[payload.id].details = payload;
 });
 
-queue.on('gym', function(payload)
-{
-    var details;
-    if (gyms[payload.gym_id] && gyms[payload.gym_id].details)
-        details = gyms[payload.gym_id].details;
+queue.on('gym', function(payload) {
+    if(gyms[payload.gym_id] && gyms[payload.gym_id].details)
+        payload.details = gyms[payload.gym_id].details;
+
+    if(gyms[payload.gym_id])
+    {
+        var oldTeam = gyms[payload.gym_id].team_id;
+        var newTeam = payload.team_id;
+        if(oldTeam != newTeam)
+        {
+            var gymName = payload.gym_id;
+            if(gyms[payload.gym_id] && gyms[payload.gym_id].details && gyms[payload.gym_id].details.name)
+                gymName = gyms[payload.gym_id].details.name;
+            logger.info("Gym " + gymName + " changed from " + oldTeam + " to " + newTeam);
+            gyms[payload.gym_id] = payload;
+            listener.emit('gymchange', { 'data' : payload, 'old' : oldTeam, 'new' : newTeam });
+        }
+    }
     gyms[payload.gym_id] = payload;
-    if(details)
-        gyms[payload.gym_id].details = details;
 });
+
+
+queue.on('gym_details', function(payload) {
+	
+    if(gyms[payload.id] != undefined && gyms[payload.id].details)
+    {
+        var oldPlayers = gyms[payload.id].details.pokemon.slice();
+        var newPlayers = payload.pokemon.slice();
+        
+        if(oldPlayers.length > 0 || newPlayers.length > 0)
+        {
+            for(var i = 0; i < newPlayers.length; i++)
+            {
+                   for(var ii = 0; ii < oldPlayers.length; ii++)
+                {
+                    if(newPlayers[i].trainer_name == oldPlayers[ii].trainer_name &&
+                        Math.abs(newPlayers[i].deployment_time - oldPlayers[ii].deployment_time) < 5)
+                    {
+                        newPlayers.splice(i, 1);
+                        oldPlayers.splice(ii, 1);
+                        i--;
+                        ii--;
+                        break;
+                    }
+                }
+            }
+               for(var ii = 0; ii < oldPlayers.length; ii++)
+            {
+                for(var i = 0; i < newPlayers.length; i++)
+                {
+                    if(newPlayers[i].trainer_name == oldPlayers[ii].trainer_name &&
+                        Math.abs(newPlayers[i].deployment_time - oldPlayers[ii].deployment_time) < 5)
+                    {
+                        newPlayers.splice(i, 1);
+                        oldPlayers.splice(ii, 1);
+                        i--;
+                        ii--;
+                        break;
+                    }
+                }
+            }
+            
+            if(newPlayers.length != 0 || oldPlayers.length != 0)
+            {
+                logger.info("Pokemon changed for gym " + payload.name);
+                for(var i = 0; i < oldPlayers.length; i++)
+                    listener.emit('gymkick', { gym : gyms[payload.id], player : oldPlayers[i] });
+                for(var i = 0; i < newPlayers.length; i++)
+                    listener.emit('gymadd', { gym : gyms[payload.id], player : newPlayers[i] });
+            }
+        }
+    }
+    if(gyms[payload.id] == undefined)
+        gyms[payload.id] = {};
+       gyms[payload.id].details = payload;
+});
+
+
+
+queue.on('gymadd', function(data)
+{
+    logger.info("Player " + data.player.trainer_name + " put a " + pokemon[data.player.pokemon_id] + " in the gym " + data.gym.details.name + "(" + data.player.deployment_time + ")");
+//		logger.info("IV: " + Math.round((data.player.iv_defense + data.player.iv_stamina + data.player.iv_attack) / .45) + ", CP: " + data.player.cp);
+
+    User.find({ active: true })
+        .then(function(users) {
+            users = users.filter(function(user) { return user.settings.ivname.toLowerCase() == data.player.trainer_name.toLowerCase() && user.ivwatch.indexOf(data.player.pokemon_uid) == -1; });
+            _.forEach(users, u =>
+            {
+                u.ivwatch.push(data.player.pokemon_uid);
+                u.save();
+            });
+
+            var userIds = users.map(function(user) {
+                return user.telegramId;
+            });
+
+            if (userIds.length) {
+                bot.sendSimpleNotification(
+                    userIds,
+                    'Pokemon ' + pokemon[data.player.pokemon_id] + '(' + data.player.cp + ") has an IV of " + Math.round((data.player.iv_defense + data.player.iv_stamina + data.player.iv_attack) / .45) + '%\n' +
+                    "Attack: " + data.player.iv_attack + ", Defense: " + data.player.iv_defense + ", Stamina: " + data.player.iv_stamina
+                );
+            }
+            
+            
+        });
+
+
+
+
+});
+
 
 function handleEncounter(encounter)
 {
     iv = 0;
     if(!encounter)
+    {
         console.log("oops");
+        return;
+    }
     if(encounter.individual_attack)
         iv = Math.round(((encounter.individual_attack+encounter.individual_stamina+encounter.individual_defense) / 45) * 100);
 
@@ -196,11 +310,15 @@ function handleEncounter(encounter)
 //cleanup
 setInterval(function()
 {
-    encounters = _.filter(encounters, function(encounter) {
-        return encounter.disappear > moment().unix();
+    var count = Object.keys(encounters).length;
+    var time = moment().unix();
+    encounters = _.pickBy(encounters, function(encounter) {
+        if(encounter)
+            return encounter.disappear_time > moment().unix();
+        return false;
     });
-    logger.debug('Cleared seen and expired pokemon');
-}, 6 * 1000);
+    console.log('Cleared ' + (count - Object.keys(encounters).length) +' seen and expired pokemon');
+}, 60 * 1000);
 
 
 

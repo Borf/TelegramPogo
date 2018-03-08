@@ -37,7 +37,7 @@ module.exports = {
         user.save();
         return { 
             msg : 'What would you like to remove?',
-            keyboard : buildkeyboard([ "Pokemon", "Raids", "Cancel"])
+            keyboard : buildkeyboard([ "Pokemon", "Raid", "Cancel"])
         };
     },
 
@@ -51,7 +51,13 @@ module.exports = {
                 user.state = "remove pokemon";
                 user.save();
                 return { msg : 'Please type the name of the pokemon', keyboard: buildkeyboard(user.watchlist.map(w => pokedex.pokedex[w.id].name)) }
-            } else  if(msg.toLowerCase() == "cancel")
+            } else if(msg.toLowerCase() == "raid")
+            {
+                user.state = "remove raid";
+                user.save();
+                return { msg : 'Which filter would you like to remove?', keyboard: buildkeyboard(
+                    user.raidwatchlist.map(w => (w.positive ? "showing " : "ignoring ") + (w.type == "level" ? ("level " + w.level + " raids") : ("pokemon " + pokedex.pokedex[w.pokemon].name + " raids")))) }
+            } else if(msg.toLowerCase() == "cancel")
             {
                 user.state = "";
                 user.save();
@@ -70,6 +76,13 @@ module.exports = {
             user.state = "";
             user.save();
             return "Removed " + msg;
+        } else if(user.state == "remove raid" )
+        {
+
+            user.raidwatchlist = user.raidwatchlist.filter(w => msg.toLowerCase() != ((w.positive ? "showing " : "ignoring ") + (w.type == "level" ? ("level " + w.level + " raids") : ("pokemon " + pokedex.pokedex[w.pokemon].name + " raids"))).toLowerCase());
+            user.state = "";
+            user.save();
+            return "Filter removed";
         }
     }
 

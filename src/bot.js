@@ -49,19 +49,27 @@ glob.sync( './src/commands/*.js' ).forEach( function( file ) {
                     replyMessage = replyMessage.msg;
                 }
                 else
-                    config.logger.info("reply Type: " + typeof replyMessage);
+                    logger.info("reply Type: " + typeof replyMessage);
 
 
                 if(replyMessage != '')
                 {
                     if(keyboard)
+                    {
+                        if(keyboard == "keep")
+                            keyboard = null;
                         bot.sendMessage(msg.from.id, replyMessage, {
                             reply_markup: {
                                 keyboard: keyboard 
                             }
                         });
+                    }
                     else
-                        bot.sendMessage(msg.from.id, replyMessage);
+                        bot.sendMessage(msg.from.id, replyMessage, {
+                            reply_markup: {
+                                hide_keyboard: true
+                            }
+                        });
                 }
             }
         });
@@ -113,7 +121,7 @@ bot.on('message', function(msg)
                     replyMessage = replyMessage.msg;
                 }
                 else
-                    config.logger.info("reply Type: " + typeof replyMessage);
+                    logger.info("reply Type: " + typeof replyMessage);
 
 
                 if(replyMessage != '')

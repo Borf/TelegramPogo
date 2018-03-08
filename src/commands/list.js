@@ -2,7 +2,8 @@
 
 var pokedex = require('../pokedex'),
     logger = require('winston'),
-    util = require('util');
+    util = require('util'),
+    buildkeyboard = require('../buildkeyboard');
 
 /**
  * Stop command
@@ -32,21 +33,53 @@ module.exports = {
      * @param {Boolean} created - Was the user created as a result of the command call?
      */
     callback: function(msg, match, user, created) {
-        var pokemon = "";
-        user.watchlist.forEach(p =>
+        user.state = "list";
+        user.save();
+        return { msg: "What would you like to watch?", keyboard: buildkeyboard([ "Pokemon", "Raids" ]) };
+    },
+
+
+    handler: function(msg, user)
+    {
+        if(user.state == "list")
         {
-            pokemon += pokedex.pokedex[p.id].name;
-            if(p.iv > 0)
+            user.state = "";
+            user.save();
+            if(msg.toLowerCase() == "pokemon")
             {
-                pokemon += ", only if IV > " + p.iv;
-                if(p.showunknowniv)
-                    pokemon += ", also show if no IV is known";
+                var pokemon = "";
+                user.watchlist.forEach(p =>
+                {
+                    pokemon += pokedex.pokedex[p.id].name;
+                    if(p.iv > 0)
+                    {
+                        pokemon += ", only if IV > " + p.iv;
+                        if(p.showunknowniv)
+                            pokemon += ", also show if no IV is known";
+                    }
+                    else   
+                        pokemon += ", no IV filter";
+                    pokemon += " (" + p.priority + ")\n";
+                })
+                return pokemon;
             }
-            else   
-                pokemon += ", no IV filter";
-            pokemon += " (" + p.priority + ")\n";
-        })
-        return pokemon;
+            else if(msg.toLowerCase() == "raids")
+            {
+                var msg = '';
+                for(var i = 0; i < user.raidwatchlist.length; i++)
+                {
+                    var txt = user.raidwatchlist[i].positive ? 'Showing ' : 'Ignoring ';
+
+                    if(user.raidwatchlist[i].type == 'level')
+                        txt += 'all level ' + user.raidwatchlist[i].level + ' raids';
+                    else if(user.raidwatchlist[i].type == 'pokemon')
+                        txt += 'all ' + pokedex.pokedex[user.raidwatchlist[i].pokemon].name + ' raids';
+
+                    msg += "\n" + txt;
+                }
+                return "your raid filters: " + msg;
+            }
+        }
     }
 
 };
