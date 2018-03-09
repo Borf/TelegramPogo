@@ -7,7 +7,8 @@ var logger = require('winston'),
     express = require('express'),
     bodyParser = require('body-parser'),
     jsonParser = bodyParser.json(),
-    listener = require('./src/listener');
+    listener = require('./src/listener'),
+    path = require('path');
 
 
 logger.remove(logger.transports.Console);
@@ -31,6 +32,19 @@ db.once('open', function() {
             listener.emit(el.type, el.message);
         }
         res.status(200).send();
+    });
+
+    app.get("/", function(req,res)
+    {
+        res.sendFile(path.join(__dirname, "admin.html"));
+    });
+    app.get("/data.json", function(req,res)
+    {
+        var data = {};
+        
+
+        res.setHeader('Content-Type', 'application/json');
+        res.send(JSON.stringify(data))
     });
 
     var bot = require('./src/bot');

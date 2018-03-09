@@ -147,7 +147,7 @@ queue.on('gym', function(payload) {
                 gymName = gyms[payload.gym_id].details.name;
             logger.info("Gym " + gymName + " changed from " + oldTeam + " to " + newTeam);
             gyms[payload.gym_id] = payload;
-            listener.emit('gymchange', { 'data' : payload, 'old' : oldTeam, 'new' : newTeam });
+            queue.emit('gymchange', { 'data' : payload, 'old' : oldTeam, 'new' : newTeam });
         }
     }
     gyms[payload.gym_id] = payload;
@@ -198,9 +198,9 @@ queue.on('gym_details', function(payload) {
             {
                 logger.info("Pokemon changed for gym " + payload.name);
                 for(var i = 0; i < oldPlayers.length; i++)
-                    listener.emit('gymkick', { gym : gyms[payload.id], player : oldPlayers[i] });
+                    queue.emit('gymkick', { gym : gyms[payload.id], player : oldPlayers[i] });
                 for(var i = 0; i < newPlayers.length; i++)
-                    listener.emit('gymadd', { gym : gyms[payload.id], player : newPlayers[i] });
+                    queue.emit('gymadd', { gym : gyms[payload.id], player : newPlayers[i] });
             }
         }
     }
@@ -239,11 +239,39 @@ queue.on('gymadd', function(data)
             
             
         });
-
-
-
-
 });
+
+
+
+queue.on("broadcast", function(data)
+{
+    console.log("Broadcast: " + data);
+
+    User.find({ active: true })
+        .then(function(users) {
+            var userIds = users.map(function(user) {
+                return user.telegramId;
+            });
+
+            if (userIds.length) {
+                bot.sendSimpleNotification(
+                    userIds,
+                    data
+                );
+            }
+            
+            
+        });
+    
+});
+
+
+queue.on("error", function(data)
+{
+    console.log("Error happened");
+    console.log(data);
+});
+
 
 
 function handleEncounter(encounter)

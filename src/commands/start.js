@@ -33,7 +33,6 @@ module.exports = {
      * @param {Boolean} created - Was the user created as a result of the command call?
      */
     callback: function(msg, match, user, created) {
-        user.state = 'tutorial1';
         if (created) {
             logger.info('Created new user with id %s', user.telegramId);
             // New users start with the default watchlist

@@ -165,9 +165,14 @@ module.exports =
                 });
             });
         });
+    },
+
+    sendSimpleNotification : function(users, caption) {
+        var that = this;
+        users.map(function(user) {
+            that.bot.sendMessage(user, caption);
+        });
     }
-
-
 };
 
 
