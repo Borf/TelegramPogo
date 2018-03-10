@@ -4,7 +4,9 @@ var events = require('events'),
     User = require('./user'),
     bot = require('./bot'),
     moment = require('moment'),
-    _ = require('lodash');
+    _ = require('lodash'),
+    fs = require('fs'),
+    moves = JSON.parse(fs.readFileSync('./db/moves.json'));
 
 
 var queue = new events.EventEmitter();
@@ -106,7 +108,7 @@ queue.on('raid', function(payload)
             if (userIds.length) {
                 bot.sendNotification(
                     userIds,
-                    'A ' + pokedex.pokedex[payload.pokemon_id] + ' raid is starting at ' + gym + '\n' +
+                    'A ' + pokedex.pokedex[payload.pokemon_id].name + ' raid is starting at ' + gym + '\n' +
                     "Starts in " + Math.round((payload.start - (Date.now()/1000))/60) + " minutes, " +
                     "Ends in " + Math.round((payload.end - (Date.now()/1000))/60) + " minutes\n" +
                     "Disappears at " + disappearTime(payload.end) + "\n" +
