@@ -106,7 +106,7 @@ queue.on('raid', function(payload)
             if (userIds.length) {
                 bot.sendNotification(
                     userIds,
-                    'A ' + pokemon[payload.pokemon_id] + ' raid is starting at ' + gym + '\n' +
+                    'A ' + pokedex.pokedex[payload.pokemon_id] + ' raid is starting at ' + gym + '\n' +
                     "Starts in " + Math.round((payload.start - (Date.now()/1000))/60) + " minutes, " +
                     "Ends in " + Math.round((payload.end - (Date.now()/1000))/60) + " minutes\n" +
                     "Disappears at " + disappearTime(payload.end) + "\n" +
@@ -213,7 +213,7 @@ queue.on('gym_details', function(payload) {
 
 queue.on('gymadd', function(data)
 {
-    logger.info("Player " + data.player.trainer_name + " put a " + pokemon[data.player.pokemon_id] + " in the gym " + data.gym.details.name + "(" + data.player.deployment_time + ")");
+    logger.info("Player " + data.player.trainer_name + " put a " + pokedex.pokedex[data.player.pokemon_id] + " in the gym " + data.gym.details.name + "(" + data.player.deployment_time + ")");
 //		logger.info("IV: " + Math.round((data.player.iv_defense + data.player.iv_stamina + data.player.iv_attack) / .45) + ", CP: " + data.player.cp);
 
     User.find({ active: true })
@@ -232,7 +232,7 @@ queue.on('gymadd', function(data)
             if (userIds.length) {
                 bot.sendSimpleNotification(
                     userIds,
-                    'Pokemon ' + pokemon[data.player.pokemon_id] + '(' + data.player.cp + ") has an IV of " + Math.round((data.player.iv_defense + data.player.iv_stamina + data.player.iv_attack) / .45) + '%\n' +
+                    'Pokemon ' + pokedex.pokedex[data.player.pokemon_id] + '(' + data.player.cp + ") has an IV of " + Math.round((data.player.iv_defense + data.player.iv_stamina + data.player.iv_attack) / .45) + '%\n' +
                     "Attack: " + data.player.iv_attack + ", Defense: " + data.player.iv_defense + ", Stamina: " + data.player.iv_stamina
                 );
             }
