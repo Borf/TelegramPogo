@@ -127,13 +127,6 @@ queue.on('egg', function(payload)
 });
 
 
-queue.on('gym_details', function(payload)
-{
-    if(!gyms[payload.id])
-        gyms[payload.id] = {};
-    gyms[payload.id].details = payload;
-});
-
 queue.on('gym', function(payload) {
     if(gyms[payload.gym_id] && gyms[payload.gym_id].details)
         payload.details = gyms[payload.gym_id].details;
