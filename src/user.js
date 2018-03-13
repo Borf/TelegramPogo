@@ -34,7 +34,10 @@ var UserSchema = new Schema({
 	},
 	settings : 
 	{
-		ivname : String,
+		ivname : {
+			type : String,
+			default: ""
+		},
 		location: [Number],
 		priority : String,
 		miniv : { type : Number, default: 100 }

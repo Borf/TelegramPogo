@@ -108,7 +108,7 @@ queue.on('raid', function(payload)
             if (userIds.length) {
                 bot.sendNotification(
                     userIds,
-                    'A ' + pokedex.pokedex[payload.pokemon_id].name + ' raid is starting at ' + gym + '\n' +
+                    'A ' + pokedex.pokedex[payload.pokemon_id].namep + ' raid is starting at ' + gym + '\n' +
                     "Starts in " + Math.round((payload.start - (Date.now()/1000))/60) + " minutes, " +
                     "Ends in " + Math.round((payload.end - (Date.now()/1000))/60) + " minutes\n" +
                     "Disappears at " + disappearTime(payload.end) + "\n" +
@@ -140,7 +140,7 @@ queue.on('gym', function(payload) {
             var gymName = payload.gym_id;
             if(gyms[payload.gym_id] && gyms[payload.gym_id].details && gyms[payload.gym_id].details.name)
                 gymName = gyms[payload.gym_id].details.name;
-            logger.info("Gym " + gymName + " changed from " + oldTeam + " to " + newTeam);
+            console.log("Gym " + gymName + " changed from " + oldTeam + " to " + newTeam);
             gyms[payload.gym_id] = payload;
             queue.emit('gymchange', { 'data' : payload, 'old' : oldTeam, 'new' : newTeam });
         }
@@ -150,7 +150,7 @@ queue.on('gym', function(payload) {
 
 
 queue.on('gym_details', function(payload) {
-	
+    console.log("Details");
     if(gyms[payload.id] != undefined && gyms[payload.id].details)
     {
         var oldPlayers = gyms[payload.id].details.pokemon.slice();
@@ -208,7 +208,8 @@ queue.on('gym_details', function(payload) {
 
 queue.on('gymadd', function(data)
 {
-    logger.info("Player " + data.player.trainer_name + " put a " + pokedex.pokedex[data.player.pokemon_id] + " in the gym " + data.gym.details.name + "(" + data.player.deployment_time + ")");
+    logger.info("Player " + data.player.trainer_name + " put a " + pokedex.pokedex[data.player.pokemon_id].name + " in the gym " + data.gym.details.name + "(" + data.player.deployment_time + ")");
+    console.log("Player " + data.player.trainer_name + " put a " + pokedex.pokedex[data.player.pokemon_id].name + " in the gym " + data.gym.details.name + "(" + data.player.deployment_time + ")");
 //		logger.info("IV: " + Math.round((data.player.iv_defense + data.player.iv_stamina + data.player.iv_attack) / .45) + ", CP: " + data.player.cp);
 
     User.find({ active: true })
@@ -280,7 +281,7 @@ function handleEncounter(encounter)
     if(encounter.individual_attack)
         iv = Math.round(((encounter.individual_attack+encounter.individual_stamina+encounter.individual_defense) / 45) * 100);
 
-    console.log(fix(encounter.encounter_id) + " Pokemon " + pokedex.pokedex[encounter.pokemon_id].name, "appeared (IV " + iv + "%, CP " + encounter.cp + ")");
+    //console.log(fix(encounter.encounter_id) + " Pokemon " + pokedex.pokedex[encounter.pokemon_id].name, "appeared (IV " + iv + "%, CP " + encounter.cp + ")");
 
 
     var sentUsers = [];
@@ -340,7 +341,7 @@ setInterval(function()
             return encounter.disappear_time > moment().unix();
         return false;
     });
-    console.log('Cleared ' + (count - Object.keys(encounters).length) +' seen and expired pokemon');
+//    console.log('Cleared ' + (count - Object.keys(encounters).length) +' seen and expired pokemon');
 }, 60 * 1000);
 
 
