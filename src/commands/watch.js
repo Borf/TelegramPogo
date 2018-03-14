@@ -37,7 +37,7 @@ module.exports = {
         user.save();
         return { 
             msg : 'What would you like to watch?',
-            keyboard : buildkeyboard([ "Pokemon", "Raids", "Gyms", "Cancel"])
+            keyboard : buildkeyboard([ "Pokemon", "Raids", "Cancel"])
         };
     },
 
@@ -82,7 +82,7 @@ module.exports = {
                 return { msg : 'Do you want IV filtering?', keyboard: buildkeyboard([">80", ">90", ">95", "100", "No Filtering"])}
             }
             else
-                return "wtf";
+                return "Didn't find any pokemon with that name. Please type again";
         }
         else if(user.state == "watch pokemon filter")
         {
@@ -213,7 +213,7 @@ module.exports = {
                 return 'Raid filter for pokemon ' + pokemon[0].name + ' added';
             }
             else
-                return "wtf";
+                return "Didn't find any pokemon with that name. Please type again";
         }
 
         return null;

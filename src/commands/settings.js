@@ -36,6 +36,7 @@ module.exports = {
         var settings = '';
         settings += "\nShow all pokemon over " + user.settings.miniv + '% IV';
         settings += "\nYour charactername is '" + user.settings.ivname + "'";
+        settings += "\nI've seen " + user.ivwatch.length + " of your pokemon";
 
         var keyboard = []
         keyboard.push("Change minimum IV that will get sent");
@@ -62,7 +63,9 @@ module.exports = {
             }
             else if(msg.toLowerCase() == "reset iv scanning pokemon")
             {
-
+                user.ivwatch = [];
+                user.save();
+                return "Resetted pokemon scanned";
             }
             else if(msg == "Change location")
             {
