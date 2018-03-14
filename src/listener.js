@@ -228,7 +228,7 @@ queue.on('gymadd', function(data)
             if (userIds.length) {
                 bot.sendSimpleNotification(
                     userIds,
-                    'Pokemon ' + pokedex.pokedex[data.player.pokemon_id] + '(' + data.player.cp + ") has an IV of " + Math.round((data.player.iv_defense + data.player.iv_stamina + data.player.iv_attack) / .45) + '%\n' +
+                    'Pokemon ' + pokedex.pokedex[data.player.pokemon_id].name + '(' + data.player.cp + ") has an IV of " + Math.round((data.player.iv_defense + data.player.iv_stamina + data.player.iv_attack) / .45) + '%\n' +
                     "Attack: " + data.player.iv_attack + ", Defense: " + data.player.iv_defense + ", Stamina: " + data.player.iv_stamina
                 );
             }
