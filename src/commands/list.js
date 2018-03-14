@@ -35,7 +35,7 @@ module.exports = {
     callback: function(msg, match, user, created) {
         user.state = "list";
         user.save();
-        return { msg: "What would you like to watch?", keyboard: buildkeyboard([ "Pokemon", "Raids" ]) };
+        return { msg: "What would you like to list?", keyboard: buildkeyboard([ "Pokemon", "Raids" ]) };
     },
 
 

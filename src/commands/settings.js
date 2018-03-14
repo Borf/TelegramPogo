@@ -35,11 +35,12 @@ module.exports = {
     callback: function(msg, match, user, created) {
         var settings = '';
         settings += "\nShow all pokemon over " + user.settings.miniv + '% IV';
-
+        settings += "\nYour charactername is '" + user.settings.ivname + "'";
 
         var keyboard = []
         keyboard.push("Change minimum IV that will get sent");
-        keyboard.push("Change name for IV personal IV scanning");
+        keyboard.push("Change name for personal IV scanning");
+        keyboard.push("Reset IV scanning pokemon");
         keyboard.push("Change location");
         keyboard.push("Cancel");
         
@@ -53,7 +54,13 @@ module.exports = {
     {
         if(user.state == "settings")
         {
-            if(msg == "Change name for IV personal IV scanning")
+            if(msg.toLowerCase() == "change name for personal iv scanning")
+            {
+                user.state = "settings ivname";
+                user.save();
+                return { msg : "Please type your player name. Your current name is " + user.settings.ivname, keyboard: null };
+            }
+            else if(msg.toLowerCase() == "reset iv scanning pokemon")
             {
 
             }
@@ -61,13 +68,13 @@ module.exports = {
             {
 
             }
-            else if(msg == "Cancel")
+            else if(msg.toLowerCase() == "cancel")
             {
                 user.state = "";
                 user.save();
                 return "Ok";
             }
-            else if(msg == "Change minimum IV that will get sent")
+            else if(msg.toLowerCase() == "change minimum iv that will get sent")
             {
                 user.state = "settings miniv";
                 user.save();
@@ -80,6 +87,13 @@ module.exports = {
             user.state = "";
             user.save();
             return "Setting changed to " + user.settings.miniv;
+        }
+        else if(user.state == "settings ivname")
+        {
+            user.settings.ivname = msg;
+            user.state = "";
+            user.save();
+            return "Setting changed to " + user.settings.ivname;
         }
     }
 
