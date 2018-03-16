@@ -64,7 +64,7 @@ queue.on('iv', function(payload)
                 encounters[encounter_id].timeout = null;
             }
             else
-                console.log("I'm late, IV match too late, so people might get a double message");
+                console.log("I'm late for a " + pokedex.pokedex[payload.pokemon_id].name + ", IV match too late, so people might get a double message");
             encounters[encounter_id].individual_attack = payload.individual_attack;
             encounters[encounter_id].individual_defense = payload.individual_defense;
             encounters[encounter_id].individual_stamina = payload.individual_stamina;
