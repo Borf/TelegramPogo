@@ -11,7 +11,6 @@ var commands = [];
 glob.sync( './src/commands/*.js' ).forEach( function( file ) {
     var command = require( path.resolve( file ) );
     commands.push(command);
-    logger.info("Loading " + command.name);
     bot.onText(command.pattern, function(msg, match)
     {
         logger.info("Got " + command.name);
