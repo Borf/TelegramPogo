@@ -82,18 +82,28 @@ queue.on('iv', function(payload)
 
 queue.on('raid', function(payload)
 {
+//console.log(payload);
+//console.log(pokedex.pokedex[payload.pokemon_id]);
+    if(payload.pokemon_id == null)
+    {
+        console.log("Raid without a pokemon id...ignoring");
+        return;
+    }
+
     var gym = payload.gym_id;
     if(gyms[payload.gym_id] && gyms[payload.gym_id].details)
         gym = gyms[payload.gym_id].details.name;
-        
-    logger.info("Pokemon " + pokedex.pokedex[payload.pokemon_id].name + " is having a raid party at " + gym);
-    logger.info("Ends in " + Math.round((payload.end - (Date.now()/1000))/60) + " minutes");
-    logger.info("Starts in " + Math.round((payload.start - (Date.now()/1000))/60) + " minutes");
+
+    console.log("Pokemon " + pokedex.pokedex[payload.pokemon_id].name + " is having a raid party at " + gym);
+    console.log("Ends in " + Math.round((payload.end - (Date.now()/1000))/60) + " minutes");
+    console.log("Starts in " + Math.round((payload.start - (Date.now()/1000))/60) + " minutes");
     if(raids[payload.spawn])
     {
-        logger.info("Duplicate raid, ignoring");
+        console.log("Duplicate raid, ignoring");
         return;
     }
+
+    payload.pokemon = pokedex.pokedex[payload.pokemon_id].name;
 
     User.find({ active: true })
         .then(function(users) {
@@ -106,7 +116,7 @@ queue.on('raid', function(payload)
             if (userIds.length) {
                 bot.sendNotification(
                     userIds,
-                    'A ' + pokedex.pokedex[payload.pokemon_id].namep + ' raid is starting at ' + gym + '\n' +
+                    'A ' + payload.pokemon + ' raid is starting at ' + gym + '\n' +
                     "Starts in " + Math.round((payload.start - (Date.now()/1000))/60) + " minutes, " +
                     "Ends in " + Math.round((payload.end - (Date.now()/1000))/60) + " minutes\n" +
                     "Disappears at " + disappearTime(payload.end) + "\n" +
