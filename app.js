@@ -8,7 +8,9 @@ var logger = require('winston'),
     bodyParser = require('body-parser'),
     jsonParser = bodyParser.json(),
     listener = require('./src/listener'),
-    path = require('path');
+    path = require('path'),
+    morgan = require('morgan'),
+    fs = require('fs');
 
 
 logger.remove(logger.transports.Console);
@@ -23,6 +25,11 @@ db.once('open', function() {
 
     var app = express();
     app.use(jsonParser);
+    app.use(morgan('common', {
+        stream: fs.createWriteStream(path.join(__dirname, 'access.log'), {flags: 'a'}),
+        skip: function(req, res) { return req.method == "POST"; }
+    }))
+   
     app.listen(config.port, config.host, e => { console.log("Listening on ", config.port); });
     app.post("/", function(req, res)
     {
