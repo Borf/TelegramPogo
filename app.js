@@ -23,7 +23,7 @@ db.once('open', function() {
 
     var app = express();
     app.use(jsonParser);
-    app.listen(config.port, e => { console.log("Listening on ", config.port); });
+    app.listen(config.port, config.host, e => { console.log("Listening on ", config.port); });
     app.post("/", function(req, res)
     {
         for(var i in req.body)
